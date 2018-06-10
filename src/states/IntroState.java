@@ -4,6 +4,7 @@ import helpers.Content;
 import helpers.Drawer;
 import helpers.Mouse;
 import game.StateManager;
+import helpers.TextOutput;
 import models.ImgObj;
 
 import java.awt.*;
@@ -41,6 +42,9 @@ public class IntroState extends State {
     @Override
     public void handleInput() {
         if(Mouse.isClicked() && Mouse.isCollided(startBtn))
-        sm.setState(sm.LOCATION, 0);
+            sm.setState(sm.LOCATION, 0);
+
+        if(Mouse.isClicked())
+            TextOutput.s = "qwertyuiop";
     }
 }

@@ -9,6 +9,17 @@ https://drive.google.com/file/d/1XImkd3lKZEuy_Xqwi0SWBkSPfnRyidDI/view?usp=shari
 
 
 THINGS TO KNOW
+quests.txt
+whichOrder roomid DialogueID
+
+
+decisions.txt // look under decision to find out number for the effects
+id
+String choice 1
+String choice 2
+dialogueIDfor1 dialogueIDfor2 effectfor1 effectfor2
+
+
 other note speakers are made of name text and imgObj and can be repeated
 Dialogue text format  **note decisions and // can be omitted if there are no decisions speakers are in the middle
 id imgObj decision;;

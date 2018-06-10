@@ -1,6 +1,7 @@
 package game;
 
 import helpers.Mouse;
+import helpers.TextOutput;
 import models.Player;
 
 import javax.swing.*;
@@ -10,12 +11,15 @@ import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
 import java.awt.image.BufferedImage;
 
+import static java.awt.Font.PLAIN;
+import static java.awt.Font.SANS_SERIF;
+
 /**
  * this is the main frame which contains the game loop and the component that all the other classes draw on
  */
 public class GamePanel extends JPanel implements Runnable, MouseListener, MouseMotionListener {
-    public static final int WIDTH = 800;
-    public static final int HEIGHT = 1000;
+    public static final int WIDTH = 600;
+    public static final int HEIGHT = 800;
     private StateManager sm;
     public static Player p;
     public static TxtArea txtArea;
@@ -51,12 +55,10 @@ public class GamePanel extends JPanel implements Runnable, MouseListener, MouseM
         addMouseMotionListener(this);
         txtArea = new TxtArea();
         this.setLayout(new BoxLayout(this,BoxLayout.Y_AXIS ));
-        this.add(Box.createRigidArea(new Dimension(800,800 )));
+        this.add(Box.createRigidArea(new Dimension(600,600 )));
         this.add(txtArea);
-        txtArea.setBounds(0,765 ,800 ,200 );
 
-
-        image = new BufferedImage(WIDTH, HEIGHT -235, 1);
+        image = new BufferedImage(WIDTH, HEIGHT -200, 1);
         g = (Graphics2D) image.getGraphics();
 
         sm = new StateManager();
@@ -101,9 +103,7 @@ public class GamePanel extends JPanel implements Runnable, MouseListener, MouseM
         draw();
 
         drawToScreen();
-        txtArea.paint(g);
-        String s = "wedfewfddfv"; // Dialogue.get String
-        txtArea.setMessage(s);
+        txtArea.setMessage(TextOutput.s);
         Mouse.update();
     }
 
@@ -164,11 +164,11 @@ public class GamePanel extends JPanel implements Runnable, MouseListener, MouseM
 
 class TxtArea extends JTextArea {
     public TxtArea() {
-        setLocation(0,800 );
-        setSize(800, 200);
+        setLocation(0,600 );
+        setSize(600, 200);
         setVisible(true);
-        setBackground(Color.GRAY);
-        setText("Hello game");
+        setBackground(Color.WHITE);
+        setFont(new Font(SANS_SERIF,PLAIN ,27));
     }
 
     public void setMessage(String s) {

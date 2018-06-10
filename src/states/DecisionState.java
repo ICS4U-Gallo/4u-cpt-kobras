@@ -1,12 +1,20 @@
 package states;
 
+import game.GamePanel;
 import game.StateManager;
 import helpers.Content;
+import helpers.Mouse;
 import models.Decision;
 
 import java.awt.*;
 
 public class DecisionState extends State {
+    public static final int PUZZLE = 1;
+    public static final int DIALOGUE = 2;
+    public static final int GRADE = 3;
+    public static final int MARK = 4;
+    public static final int SOCIAL = 5;
+
     String[] choices = new String[2];
     private static final int RIGHT = 0;
     private static final int LEFT = 1;
@@ -39,24 +47,26 @@ public class DecisionState extends State {
     @Override
     public void handleInput() {
         // if clicked on one option then check the effects of that option (0 is right, 1 is left) for each choice
-        // if(Mouose.isClicked())
-        // if mouse collides with(0,0,400,400) {
-        // choice = LEFT;
-        // }
-        // if mouse collides with(400,0,400,400) {
-        // choice = RIGHT;
-        // }
-        // int effect = getEffect(choice)
+        if(Mouse.isClicked()) {
+            if(Mouse.isCollided(0,0,GamePanel.WIDTH /2,(GamePanel.HEIGHT - 200)/2 )) {
+                choice = LEFT;
+            } else {
+                choice = RIGHT;
+            }
+            int effect = decision.effects[choice];
+
+            if(effect == DIALOGUE) {
+
+            } else if(effect == PUZZLE) {
+
+            }
+        }
+
         /*
             if(effect == DIALOGUE) // check the decision class for other final constants
             // sm.setState(StateManager.DIALOGUE, decision.getDialogue(choice)
             if(effect == PUZZLE)
                 sm.setState(StateManager.PUZZLE, decision.getPuzzle())
-            if mark
-                Player.setBonusAverage(1)
-
-            if social
-                setSocialSkill(3)
 
             if grade
                 Player.grade(

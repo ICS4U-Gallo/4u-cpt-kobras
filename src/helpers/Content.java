@@ -2,6 +2,9 @@ package helpers;
 
 import models.*;
 import models.puzzleModels.Puzzle;
+import models.storyline.Quest;
+import models.storyline.Storyline;
+
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.*;
@@ -28,6 +31,17 @@ public class Content {
         initDecisions();
         initDialogues();
         initLocations();
+        initQuests();
+        setDecisions();
+    }
+
+    private static void setDecisions() {
+        for(int i = 0; i < decisions.size();i++) {
+            Decision dec = Content.decisions.get(i);
+            if(dec!= null){
+                dec.dialogues = new Dialogue[] {Content.dialogues.get(dec.dialogue[0]), Content.dialogues.get(dec.dialogue[1])};
+            }
+        }
     }
 
 
@@ -149,8 +163,41 @@ public class Content {
         }
     }
 
-    public static void initDecisions() {
+    public static void initQuests() {
+        Scanner sc = null;
+        try {
+            sc = new Scanner(new FileReader("resources/gamedat/quests.txt"));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        while(sc.hasNextLine()) {
+            Scanner sc2 = new Scanner(sc.nextLine());
+            int order = sc2.nextInt();
+            int roomId = sc2.nextInt();
+            Dialogue d = Content.dialogues.get(sc2.nextInt());
+            Storyline.quests.add(order, new Quest(roomId, d));
+        }
+    }
 
+    public static void initDecisions(){
+        Scanner sc = null;
+        try {
+            sc = new Scanner(new FileReader("resources/gamedat/decisions.txt"));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        while (sc.hasNextLine()) {
+            int id = Integer.parseInt(sc.nextLine());
+            String choice1 = sc.nextLine();
+            String choice2 = sc.nextLine();
+            Scanner sc2 = new Scanner(sc.nextLine());
+            int dio1 = sc2.nextInt();
+            int dio2 = sc2.nextInt();
+            int eff1 = sc2.nextInt();
+            int eff2 = sc2.nextInt();
+            int puzzle = sc2.nextInt();
+            Content.decisions.put(id,new Decision(new String[] {choice1, choice2}, new int[] {eff1, eff2}, new int[] {dio1, dio2},Content.puzzles.get(puzzle)));
+        }
     }
 
 

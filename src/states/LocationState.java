@@ -6,10 +6,9 @@ import helpers.Drawer;
 import helpers.Mouse;
 import models.ImgObj;
 import models.Location;
+import models.storyline.Storyline;
 
 import java.awt.*;
-import java.util.Timer;
-
 import static game.StateManager.DIALOGUE;
 
 
@@ -21,6 +20,7 @@ public class LocationState extends State {
 
     private static ImgObj[] arrows = {Content.images.get(101),Content.images.get(102), Content.images.get(103), Content.images.get(104)};
     private static Location location = Content.locations.get(0);
+    private static boolean questing;
 
 
     public LocationState(StateManager sm) {
@@ -29,7 +29,12 @@ public class LocationState extends State {
 
     @Override
     public void init() {
-
+        // if quest puzzle is completed set next quest
+        if(Storyline.quests.get(Storyline.currQuest).roomNum == location.id) {
+            questing = true;
+        } else {
+            questing = false;
+        }
     }
 
     @Override
@@ -40,9 +45,12 @@ public class LocationState extends State {
         for(ImgObj a: arrows) {
             Drawer.draw(g,a);
         }
+        // draw room obj
+        Drawer.draw(g, location.getDialogue().obj);
+        if(questing) {
+            Drawer.draw(g, Storyline.quests.get(Storyline.currQuest).dialogue.obj);
+        }
 
-        // draw room object
-        //Drawer.draw(g, location.getDialogue().getObj());
     }
 
     @Override
@@ -52,8 +60,8 @@ public class LocationState extends State {
 
     @Override
     public void handleInput() {
-        // if mouse clicked arrow button
 
+        // if mouse clicked arrow button
         if(Mouse.isClicked()) {
             for (int i = 0; i < 4; i++) {
                 if(Mouse.isCollided(arrows[i])) {
@@ -61,7 +69,6 @@ public class LocationState extends State {
                     if(move != -1) {
 
                         location = Content.locations.get(move);
-                        // Mouse.setClickState(false);
                     }
                 }
             }
@@ -70,7 +77,10 @@ public class LocationState extends State {
             if(location.getDialogue().getID() != -1) {
                 if(Mouse.isCollided(location.getDialogue().getObj())) {
                     sm.setState(DIALOGUE, location.getDialogue().getID());
-                    // Mouse.setClickState(false);
+                } else if(questing) {
+                    if(Mouse.isCollided(Storyline.quests.get(Storyline.currQuest).dialogue.obj)) {
+                        sm.setState(DIALOGUE, Storyline.quests.get(Storyline.currQuest).dialogue.getID());
+                    }
                 }
             }
 

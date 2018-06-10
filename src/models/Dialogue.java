@@ -1,9 +1,7 @@
 package models;
 
-import helpers.Content;
-
 public class Dialogue {
-    private ImgObj obj;
+    public ImgObj obj;
     private int id;
     private Speaker[] speakers;
     private Decision decision;

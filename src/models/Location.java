@@ -3,7 +3,7 @@ package models;
 import helpers.Content;
 
 public class Location {
-    private int id;
+    public int id;
     private int[] roomLocations; // up right down left
     private ImgObj background;
     private Dialogue[][] dialogues; // [year][puzzleDone]
