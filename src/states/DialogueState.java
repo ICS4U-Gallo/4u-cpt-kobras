@@ -7,8 +7,8 @@ import helpers.Mouse;
 import helpers.TextOutput;
 import models.Dialogue;
 import models.Speaker;
-
 import java.awt.*;
+import java.awt.image.BufferedImage;
 
 public class DialogueState extends State {
     Speaker[] speakers;

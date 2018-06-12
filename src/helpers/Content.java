@@ -75,7 +75,8 @@ public class Content {
             ImgObj img = Content.images.get(Integer.parseInt(sc2.nextLine()));
             int decision = -1;
             if(sc2.hasNext(";;")) {
-                decision = Integer.parseInt(sc2.nextLine());
+                String s2 = sc2.nextLine();
+                decision = Integer.parseInt(s2.substring(0,s2.length() -2));
             } else {
                 sc2.nextLine();
             }

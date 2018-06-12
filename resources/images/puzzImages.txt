@@ -1,0 +1,1 @@
+2 0 0 600 600 5 /images/locationImg/2.png

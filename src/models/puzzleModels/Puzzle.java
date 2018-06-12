@@ -16,7 +16,6 @@ public abstract class Puzzle {
 
     public abstract void handleInput();
 
-
     public boolean isCompleted() {
         return isCompleted;
     }
