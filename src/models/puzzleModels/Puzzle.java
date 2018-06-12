@@ -6,6 +6,8 @@ public abstract class Puzzle {
     public int id;
     private boolean isCompleted;
 
+    public abstract void init();
+
     public abstract void draw(Graphics2D g);
 
     public abstract boolean passed();
