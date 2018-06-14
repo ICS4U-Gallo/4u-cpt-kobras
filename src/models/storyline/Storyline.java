@@ -5,6 +5,10 @@ import java.util.ArrayList;
 public class Storyline {
     public static ArrayList<Quest> quests;
     public static int currQuest;
+    public Storyline() {
+        quests = new ArrayList<>();
+
+    }
 
     public static boolean nextQuest() {
         // if currQuest puzzle is completed (quest.dialogue.decision.puzzle.isCompleted())

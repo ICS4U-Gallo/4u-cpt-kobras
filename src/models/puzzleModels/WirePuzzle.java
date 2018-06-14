@@ -2,6 +2,7 @@ package models.puzzleModels;
 
 import helpers.Drawer;
 import helpers.Mouse;
+import models.Dialogue;
 import models.ImgObj;
 
 import java.awt.*;
@@ -17,6 +18,10 @@ public class WirePuzzle extends Puzzle {
     ImgObj[] imgObjs = new ImgObj[16];
     int[] rots = new int[16];
     boolean quit = false;
+
+    public WirePuzzle(Dialogue d) {
+
+    }
 
     @Override
     public void init() {

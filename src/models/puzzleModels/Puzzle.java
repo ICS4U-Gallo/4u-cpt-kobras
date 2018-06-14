@@ -1,10 +1,13 @@
 package models.puzzleModels;
 
+import models.Dialogue;
+
 import java.awt.Graphics2D;
 
 public abstract class Puzzle {
     public int id;
     private boolean isCompleted;
+    public Dialogue dialogue;
 
     public abstract void init();
 

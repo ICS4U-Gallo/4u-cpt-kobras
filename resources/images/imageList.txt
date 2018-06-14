@@ -1,4 +1,4 @@
-103 250 540 50 50 /images/locationImg/arrowDown.png
+103 275 550 50 50 /images/locationImg/arrowDown.png
 101 275 0 50 50 /images/locationImg/arrowUp.png
 104 0 275 50 50 /images/locationImg/arrowLeft.png
 102 550 275 50 50 /images/locationImg/arrowRight.png

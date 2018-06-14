@@ -26,6 +26,7 @@ public class Content {
     public static HashMap<Integer, Decision> decisions = new HashMap<>();
 
     public static void init() {
+        new Storyline();
         initImages();
         initPuzzles();
         initDecisions();
@@ -176,6 +177,7 @@ public class Content {
             int order = sc2.nextInt();
             int roomId = sc2.nextInt();
             Dialogue d = Content.dialogues.get(sc2.nextInt());
+
             Storyline.quests.add(order, new Quest(roomId, d));
         }
     }

@@ -48,7 +48,8 @@ public class LocationState extends State {
             Drawer.draw(g,a);
         }
         // draw room obj
-        Drawer.draw(g, location.getDialogue().obj);
+
+        //Drawer.draw(g, location.getDialogue().obj);
         if(questing) {
             Drawer.draw(g, Storyline.quests.get(Storyline.currQuest).dialogue.obj);
         }
