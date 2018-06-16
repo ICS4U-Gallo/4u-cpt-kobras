@@ -77,7 +77,7 @@ public class Content {
             int decision = -1;
             if(sc2.hasNext(";;")) {
                 String s2 = sc2.nextLine();
-                decision = Integer.parseInt(s2.substring(0,s2.length() -2));
+                    decision = Integer.parseInt(s2.substring(0,s2.length() -2));
             } else {
                 sc2.nextLine();
             }

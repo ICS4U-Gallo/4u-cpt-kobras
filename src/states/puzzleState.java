@@ -24,7 +24,7 @@ public class puzzleState extends State{
     @Override
     public void draw(Graphics2D g) {
         // pass draw to the instance of the puzzle
-        // puzz.draw(g);
+        puzz.draw(g);
 
     }
 

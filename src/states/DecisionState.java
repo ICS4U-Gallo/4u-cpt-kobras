@@ -65,6 +65,8 @@ public class DecisionState extends State {
                 sm.setState(StateManager.DIALOGUE,decision.dialogue[choice]);
             } else if(effect == PUZZLE) {
                 sm.setState(StateManager.PUZZLE, decision.puzzle.id);
+            } else if(effect == GRADE) {
+                sm.setState(StateManager.DIALOGUE, decision.dialogue[choice]);
             }
         }
 

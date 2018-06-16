@@ -18,17 +18,21 @@ decisions.txt // look under decision to find out number for the effects
 id
 String choice 1
 String choice 2
-dialogueIDfor1 dialogueIDfor2 effectfor1 effectfor2
+dialogueIDfor1 dialogueIDfor2 effectfor1 effectfor2 puzzle id
 
 
 other note speakers are made of name text and imgObj and can be repeated
-Dialogue text format  **note decisions and // can be omitted if there are no decisions speakers are in the middle
-id imgObj decision;;
+Dialogue text format **decision spot can be left blank, no ;;
+id
+imgObj
+decision;;
 name
 text here
 imgObj of speaker
-///
-id imgObj decision;;
+---------------------------------------
+id
+imgObj
+
 name
 text here
 imgObj
