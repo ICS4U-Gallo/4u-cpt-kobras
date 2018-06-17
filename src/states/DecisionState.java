@@ -35,6 +35,12 @@ public class DecisionState extends State {
     public void draw(Graphics2D g) {
         // draw a translucent thing to darken the screen
         // draw the strings from the choices on 2 sides maybe in a box
+        g.setColor(Color.WHITE);
+        g.drawRect(0,325 , 280,50 );
+        g.drawRect(325,325 ,280 , 50);
+        g.setColor(Color.BLACK);
+        g.drawString(decision.choices[LEFT], 5,330 );
+        g.drawString(decision.choices[RIGHT],330 ,330 );
 
 
     }
@@ -56,22 +62,13 @@ public class DecisionState extends State {
             int effect = decision.effects[choice];
 
             if(effect == DIALOGUE) {
-
+                sm.setState(StateManager.DIALOGUE,decision.dialogue[choice]);
             } else if(effect == PUZZLE) {
-
+                sm.setState(StateManager.PUZZLE, decision.puzzle.id);
+            } else if(effect == GRADE) {
+                sm.setState(StateManager.DIALOGUE, decision.dialogue[choice]);
             }
         }
 
-        /*
-            if(effect == DIALOGUE) // check the decision class for other final constants
-            // sm.setState(StateManager.DIALOGUE, decision.getDialogue(choice)
-            if(effect == PUZZLE)
-                sm.setState(StateManager.PUZZLE, decision.getPuzzle())
-
-            if grade
-                Player.grade(
-
-            sm.setState(StateManager.DIALOGUE, decision.getDialogue(choice)
-         */
     }
 }

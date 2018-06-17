@@ -4,7 +4,7 @@ import models.puzzleModels.Puzzle;
 
 public class Decision {
 
-
+    public int id;
     public String[] choices;
     public int[] effects;
     public int[] dialogue;
@@ -12,7 +12,8 @@ public class Decision {
     public Dialogue[] dialogues;
 
 
-    public Decision(String[] choices, int[] effects, int[] dialogue, Puzzle puzzle ) {
+    public Decision(int id, String[] choices, int[] effects, int[] dialogue, Puzzle puzzle ) {
+        this.id = id;
         this.choices = choices;
         this.dialogue = dialogue;
         this.puzzle = puzzle;

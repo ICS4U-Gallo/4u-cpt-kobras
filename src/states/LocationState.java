@@ -9,6 +9,8 @@ import models.Location;
 import models.storyline.Storyline;
 
 import java.awt.*;
+import java.awt.image.BufferedImage;
+
 import static game.StateManager.DIALOGUE;
 
 
@@ -46,10 +48,13 @@ public class LocationState extends State {
             Drawer.draw(g,a);
         }
         // draw room obj
-        Drawer.draw(g, location.getDialogue().obj);
+
+        //Drawer.draw(g, location.getDialogue().obj);
         if(questing) {
             Drawer.draw(g, Storyline.quests.get(Storyline.currQuest).dialogue.obj);
         }
+        BufferedImage image1 = Content.images.get(1).img;
+
 
     }
 

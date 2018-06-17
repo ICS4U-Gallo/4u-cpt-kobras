@@ -18,23 +18,26 @@ public class puzzleState extends State{
 
     @Override
     public void init() {
-
+        puzz.init();
     }
 
     @Override
     public void draw(Graphics2D g) {
         // pass draw to the instance of the puzzle
-        // puzz.draw(g);
+        puzz.draw(g);
+
     }
 
     @Override
     public void update() {
-//         passes update to the puzzle class
-//        puzz.handleInput();;
-//         check if puzzle is completed then change state to location
-//        if(puzz.isCompleted()) {
-//            sm.setState(StateManager.LOCATION, Player.location);
-//        }
+
+        puzz.handleInput();
+        if(puzz.quit()){
+            sm.setState(StateManager.DIALOGUE,puzz.dialogue.getID() );
+        }
+        if(puzz.passed()) {
+            sm.setState(StateManager.LOCATION,0 );
+        }
     }
 
     @Override

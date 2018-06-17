@@ -26,6 +26,7 @@ public class Content {
     public static HashMap<Integer, Decision> decisions = new HashMap<>();
 
     public static void init() {
+        new Storyline();
         initImages();
         initPuzzles();
         initDecisions();
@@ -75,7 +76,8 @@ public class Content {
             ImgObj img = Content.images.get(Integer.parseInt(sc2.nextLine()));
             int decision = -1;
             if(sc2.hasNext(";;")) {
-                decision = Integer.parseInt(sc2.nextLine());
+                String s2 = sc2.nextLine();
+                    decision = Integer.parseInt(s2.substring(0,s2.length() -2));
             } else {
                 sc2.nextLine();
             }
@@ -175,6 +177,7 @@ public class Content {
             int order = sc2.nextInt();
             int roomId = sc2.nextInt();
             Dialogue d = Content.dialogues.get(sc2.nextInt());
+
             Storyline.quests.add(order, new Quest(roomId, d));
         }
     }
@@ -196,7 +199,7 @@ public class Content {
             int eff1 = sc2.nextInt();
             int eff2 = sc2.nextInt();
             int puzzle = sc2.nextInt();
-            Content.decisions.put(id,new Decision(new String[] {choice1, choice2}, new int[] {eff1, eff2}, new int[] {dio1, dio2},Content.puzzles.get(puzzle)));
+            Content.decisions.put(id,new Decision(id,new String[] {choice1, choice2}, new int[] {eff1, eff2}, new int[] {dio1, dio2},Content.puzzles.get(puzzle)));
         }
     }
 

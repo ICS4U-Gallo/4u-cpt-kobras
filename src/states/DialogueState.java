@@ -2,11 +2,13 @@ package states;
 
 import game.StateManager;
 import helpers.Content;
+import helpers.Drawer;
 import helpers.Mouse;
+import helpers.TextOutput;
 import models.Dialogue;
 import models.Speaker;
-
 import java.awt.*;
+import java.awt.image.BufferedImage;
 
 public class DialogueState extends State {
     Speaker[] speakers;
@@ -28,20 +30,28 @@ public class DialogueState extends State {
     public void draw(Graphics2D g) {
         // draw background
         // draw the character
+        Drawer.draw(g,speakers[index].image);
     }
 
     @Override
     public void update() {
         handleInput();
-        // set texts TextOutput.s = ;
-        //
+        TextOutput.s = speakers[index].name + ":\n"+ speakers[index].text;
+
     }
 
     @Override
     public void handleInput() {
         // if mouse clicked
         if(Mouse.isClicked()) {
-
+            index++;
+            if(index >= speakers.length) {
+                if(dialogue.hasDecision()) {
+                    sm.setState(StateManager.DECISION, dialogue.getDecision().id );
+                } else {
+                    sm.setState(StateManager.LOCATION,-1);
+                }
+            }
         }
         // then switch over to next speaker
         // if no more speakers, then if decision
