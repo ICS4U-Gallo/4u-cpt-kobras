@@ -1,7 +1,9 @@
 package models.puzzleModels;
 
+import helpers.Content;
 import helpers.Drawer;
 import helpers.Mouse;
+import helpers.TextOutput;
 import models.Dialogue;
 import models.ImgObj;
 
@@ -11,10 +13,10 @@ import java.io.IOException;
 
 public class StoryPuzzle extends Puzzle {
 
-    // placeholder for the boxes
-    ImgObj ch1 = new ImgObj(50, 100, 100, 50, 50, ImageIO.read(StoryPuzzle.class.getResource("/images/chbutton1.png")));
-    ImgObj ch2 = new ImgObj(51, 200, 100, 50, 50, ImageIO.read(StoryPuzzle.class.getResource("/images/chbutton1.png")));
-    ImgObj ch3 = new ImgObj(52, 300, 100, 50, 50, ImageIO.read(StoryPuzzle.class.getResource("/images/chbutton1.png")));
+    ImgObj ch1 = Content.images.get(20);
+    ImgObj ch2 = Content.images.get(21);
+    ImgObj ch3 = Content.images.get(22);
+    ImgObj exit = Content.images.get(-5);
 
     String[] choices0 = {"plum", "pear", "pineapple"};
     String[] choices1 = {"excited", "horrid", "rambunctious"};
@@ -24,11 +26,13 @@ public class StoryPuzzle extends Puzzle {
     String[][] arr = {choices0, choices1, choices2, choices3, choices4};
 
     String[] words = new String[arr.length];
+    int index = 0;
+    boolean done = false;
 
     // story
-    String story = "You were walking down the hallway, eating a " + words[0] + ". Suddenly, you saw a " +
-            words[1] + " " + words[2] + " jump out in front of you! You threw your " + words[0] + " at the " +
-            words[2] + ", and it " + words[3] + " very " + words[1] + "ly! You were " + words[4] + ", and you " +
+    String story = "You were walking down the hallway, eating a " + words[0] + ". \nSuddenly, you saw a " +
+            words[1] + " " + words[2] + " jump out in front of you! \nYou threw your " + words[0] + " at the " +
+            words[2] + ", and it " + words[3] + " very " + words[1] + "ly! \nYou were " + words[4] + ", and you " +
             "hurried away, wondering about the fate of your half-eaten " + words[0] + ".";
 
     public StoryPuzzle(Dialogue d) throws IOException {
@@ -42,27 +46,30 @@ public class StoryPuzzle extends Puzzle {
 
     @Override
     public void draw(Graphics2D g) {
+        g.setColor(Color.BLACK);
         Drawer.draw(g, ch1);
         Drawer.draw(g, ch2);
         Drawer.draw(g, ch3);
         g.drawString("Choose words to finish the story", 50, 50);
         // accessing the 2D array of choices
-        for (int i = 0; i < arr.length; i++){
-            g.drawString(arr[i][0], 100, 100);
-            g.drawString(arr[i][1], 200, 100);
-            g.drawString(arr[i][2], 300, 100);
+        for ( ; index < arr.length; ){
+            g.drawString(arr[index][0], 125, 500);
+            g.drawString(arr[index][1], 225, 500);
+            g.drawString(arr[index][2], 325, 500);
             // wait for choice to be made before the words change
+        }
+        if (index == 5) {
+            g.setColor(Color.WHITE);
+            g.drawRect(0, 0, 610, 810);
+            g.setColor(Color.BLACK);
+            g.drawString(story, 50, 100);
+            Drawer.draw(g, exit);
         }
     }
 
     @Override
     public boolean passed() {
-        for (int i = 0; i < words.length; i++){
-            if (words[i].equals(null)){
-                return false;
-            }
-        }
-        return true;
+        return done;
     }
 
     @Override
@@ -70,13 +77,6 @@ public class StoryPuzzle extends Puzzle {
         return false;
     }
 
-    // oh right
-    // theres also this
-    // find image of back button
-    // make in img obj of it
-    // do the drawer.draw thing for the back button
-    // copy mouse isCollided and add the backbutton img where specified
-    // then...
     @Override
     public boolean quit() {
         return false;
@@ -97,6 +97,12 @@ public class StoryPuzzle extends Puzzle {
                 if(Mouse.isCollided(ch3)) {
                     words[i] = arr[i][2];
                 }
+            }
+            index++;
+        }
+        if (Mouse.isClicked()) {
+            if (Mouse.isCollided(exit)) {
+                done = true;
             }
         }
     }
