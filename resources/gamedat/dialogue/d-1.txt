@@ -1,6 +1,6 @@
 -1
 0
-num;;
+-1
 qwerty
 testing
 -1

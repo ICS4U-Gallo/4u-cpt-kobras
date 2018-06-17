@@ -12,6 +12,7 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 
 import static game.StateManager.DIALOGUE;
+import static game.StateManager.INTRO;
 
 
 /**
@@ -32,6 +33,9 @@ public class LocationState extends State {
     @Override
     public void init() {
         // if quest puzzle is completed set next quest
+        if(!Storyline.nextQuest()) {
+            sm.setState(INTRO,0 );
+        }
         if(Storyline.quests.get(Storyline.currQuest).roomNum == location.id) {
             questing = true;
         } else {
@@ -53,7 +57,6 @@ public class LocationState extends State {
         if(questing) {
             Drawer.draw(g, Storyline.quests.get(Storyline.currQuest).dialogue.obj);
         }
-        BufferedImage image1 = Content.images.get(1).img;
 
 
     }

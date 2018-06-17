@@ -44,7 +44,7 @@ public class IntroState extends State {
         if(Mouse.isClicked() && Mouse.isCollided(startBtn))
             sm.setState(sm.LOCATION, 0);
 
-        if(Mouse.isClicked())
-            TextOutput.s = "qwertyuiop";
+       // if(Mouse.isClicked())
+       //     TextOutput.s = "You were walking down a hallway\nSuddenly you see an indigo bat jump in fornt of you!\nYou threw your trusty sidekick at the bat and it\nsaid very loud words!You were frightened\n and hurried awaty wondering about the state of your half eaten ...";
     }
 }

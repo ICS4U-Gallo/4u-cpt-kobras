@@ -1,4 +1,8 @@
 -1
 choice 1
 choice 2
-2 2 -1 -1 -1
+2 2 1 1 -1
+1
+follow mr.nach
+resistance is futile
+2 2 1 1 -1

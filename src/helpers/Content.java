@@ -1,7 +1,7 @@
 package helpers;
 
 import models.*;
-import models.puzzleModels.Puzzle;
+import models.puzzleModels.*;
 import models.storyline.Quest;
 import models.storyline.Storyline;
 
@@ -34,6 +34,7 @@ public class Content {
         initLocations();
         initQuests();
         setDecisions();
+        System.out.println(dialogues.get(1).decision.id);
     }
 
     private static void setDecisions() {
@@ -47,13 +48,10 @@ public class Content {
 
 
     public static void initPuzzles() {
-        Scanner sc = null;
-        try {
-            sc = new Scanner(new FileReader("resources/gamedat/puzzles.txt"));
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-
+        puzzles.put(-1,new WinPuzzle());
+        puzzles.put(0,new PianoPuzzle());
+        puzzles.put(1,new WirePuzzle());
+        puzzles.put(2,new StoryPuzzle());
     }
 
 
@@ -74,13 +72,8 @@ public class Content {
             }
             int id = Integer.parseInt(sc2.nextLine());
             ImgObj img = Content.images.get(Integer.parseInt(sc2.nextLine()));
-            int decision = -1;
-            if(sc2.hasNext(";;")) {
-                String s2 = sc2.nextLine();
-                    decision = Integer.parseInt(s2.substring(0,s2.length() -2));
-            } else {
-                sc2.nextLine();
-            }
+            int decision = Integer.parseInt(sc2.nextLine());
+
             List<Speaker> speakers = new ArrayList<>();
             while(sc2.hasNextLine()) {
                 String name = sc2.nextLine();

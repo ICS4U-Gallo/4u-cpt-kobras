@@ -33,7 +33,7 @@ public class puzzleState extends State{
 
         puzz.handleInput();
         if(puzz.quit()){
-            sm.setState(StateManager.DIALOGUE,puzz.dialogue.getID() );
+            sm.setState(StateManager.DIALOGUE,puzz.getDialogue().getID() );
         }
         if(puzz.passed()) {
             sm.setState(StateManager.LOCATION,0 );

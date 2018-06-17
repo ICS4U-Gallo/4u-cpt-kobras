@@ -18,6 +18,7 @@ public class DialogueState extends State {
     public DialogueState(StateManager sm, int id) {
         super(sm);
         dialogue = Content.dialogues.get(id);
+        dialogue.spoken = true;
         speakers = dialogue.getSpeakers();
         index = 0;
     }

@@ -98,7 +98,7 @@ public class GamePanel extends JPanel implements Runnable, MouseListener, MouseM
      * Methods that are called that are updated constantly
      */
     public void tick() {
-        System.out.println(Mouse.getX() + " " + Mouse.getY());
+        //System.out.println(Mouse.getX() + " " + Mouse.getY());
         sm.update();
         draw();
 

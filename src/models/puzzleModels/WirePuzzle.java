@@ -29,9 +29,6 @@ public class WirePuzzle extends Puzzle {
     boolean[] correct = {false, true, false, false, false, false, true, true, false, false, false, true};
     boolean quit = false;
 
-    public WirePuzzle(Dialogue d) throws IOException {
-
-    }
 
     @Override
     public void init() {
