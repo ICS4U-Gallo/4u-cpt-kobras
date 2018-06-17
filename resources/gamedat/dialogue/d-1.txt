@@ -1,0 +1,6 @@
+-1
+0
+num;;
+qwerty
+testing
+-1
