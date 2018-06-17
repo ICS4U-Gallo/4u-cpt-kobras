@@ -38,4 +38,12 @@
 501 300 200 200 300 /images/peopleImg/pavalanni.png
 502 300 200 200 400 /images/peopleImg/nach.png
 503 300 200 200 300 /images/peopleImg/laggo.png
-504 300 200 200 500 /images/peopleImg/secretary.png504 300 200 200 500 /images/peopleImg/secretary.png
+504 300 200 200 500 /images/peopleImg/secretary.png
+=======
+31 0 0 100 250 /images/piano1.png
+32 100 0 100 250 /images/piano2.png
+33 200 0 100 250 /images/piano3.png
+34 300 0 100 250 /images/piano4.png
+35 400 0 100 250 /images/piano5.png
+36 500 0 100 250 /images/piano6.png
+>>>>>>> pr/6
