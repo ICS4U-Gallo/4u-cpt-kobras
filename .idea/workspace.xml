@@ -2,23 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="048aea2d-944e-40ee-99d1-0285c1299e91" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/images/intro.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/gamedat/dialogue/d-1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/gamedat/dialogue/d-1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/gamedat/dialogue/d2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/gamedat/dialogue/d2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/gamedat/puzzles.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/gamedat/puzzles.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/gamedat/quests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/gamedat/quests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/Content.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/Content.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Dialogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Dialogue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/puzzleModels/PianoPuzzle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/puzzleModels/PianoPuzzle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/puzzleModels/Puzzle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/puzzleModels/Puzzle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/puzzleModels/StoryPuzzle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/puzzleModels/StoryPuzzle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/puzzleModels/WinPuzzle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/puzzleModels/WinPuzzle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/puzzleModels/WirePuzzle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/puzzleModels/WirePuzzle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/states/DecisionState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/states/DecisionState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/states/DialogueState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/states/DialogueState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/states/LocationState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/states/LocationState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/states/puzzleState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/states/puzzleState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/imageList.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/imageList.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/states/IntroState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/states/IntroState.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,7 +42,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="quests.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="quests.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/gamedat/quests.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state>
@@ -73,20 +60,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Decision.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/models/Decision.java">
+      <file leaf-file-name="imageList.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/images/imageList.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="147">
+              <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="puzzles.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/gamedat/puzzles.txt">
+      <file leaf-file-name="IntroState.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/states/IntroState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
+            <state relative-caret-position="231">
+              <caret line="29" column="13" lean-forward="true" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -103,7 +90,7 @@
       <file leaf-file-name="DecisionState.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/states/DecisionState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="548">
+            <state relative-caret-position="525">
               <caret line="66" selection-start-line="66" selection-end-line="66" />
               <folding>
                 <element signature="e#1238#1239#0" expanded="true" />
@@ -116,17 +103,21 @@
       <file leaf-file-name="DialogueState.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/states/DialogueState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="49" column="24" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="24" />
+            <state relative-caret-position="315">
+              <caret line="56" column="43" selection-start-line="56" selection-end-line="57" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IntroState.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/states/IntroState.java">
+      <file leaf-file-name="LocationState.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/states/LocationState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+            <state relative-caret-position="170">
+              <caret line="29" column="18" lean-forward="true" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+              <folding>
+                <element signature="e#807#808#0" expanded="true" />
+                <element signature="e#832#833#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -174,13 +165,11 @@
         <option value="$PROJECT_DIR$/resources/gamedat/dialogue/d6.txt" />
         <option value="$PROJECT_DIR$/src/models/Location.java" />
         <option value="$PROJECT_DIR$/resources/gamedat/decisions.txt" />
-        <option value="$PROJECT_DIR$/src/states/IntroState.java" />
         <option value="$PROJECT_DIR$/src/game/GamePanel.java" />
         <option value="$PROJECT_DIR$/src/models/storyline/Storyline.java" />
         <option value="$PROJECT_DIR$/src/models/Decision.java" />
         <option value="$PROJECT_DIR$/resources/gamedat/dialogue/d1.txt" />
         <option value="$PROJECT_DIR$/resources/gamedat/dialogues.txt" />
-        <option value="$PROJECT_DIR$/resources/images/imageList.txt" />
         <option value="$PROJECT_DIR$/resources/gamedat/locations.txt" />
         <option value="$PROJECT_DIR$/src/states/LocationState.java" />
         <option value="$PROJECT_DIR$/src/states/DecisionState.java" />
@@ -194,10 +183,12 @@
         <option value="$PROJECT_DIR$/src/models/puzzleModels/WirePuzzle.java" />
         <option value="$PROJECT_DIR$/src/helpers/Content.java" />
         <option value="$PROJECT_DIR$/src/states/puzzleState.java" />
-        <option value="$PROJECT_DIR$/src/states/DialogueState.java" />
         <option value="$PROJECT_DIR$/resources/gamedat/dialogue/d2.txt" />
         <option value="$PROJECT_DIR$/resources/gamedat/dialogue/d-1.txt" />
         <option value="$PROJECT_DIR$/resources/gamedat/quests.txt" />
+        <option value="$PROJECT_DIR$/src/states/DialogueState.java" />
+        <option value="$PROJECT_DIR$/resources/images/imageList.txt" />
+        <option value="$PROJECT_DIR$/src/states/IntroState.java" />
       </list>
     </option>
   </component>
@@ -312,8 +303,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Victor\IdeaProjects-KoV\school project\resources\images\locationImg" />
       <recent name="C:\Users\Victor\IdeaProjects-KoV\school project\resources\images" />
+      <recent name="C:\Users\Victor\IdeaProjects-KoV\school project\resources\images\locationImg" />
       <recent name="C:\Users\Victor\IdeaProjects-KoV\school project\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -732,7 +723,21 @@
       <option name="project" value="LOCAL" />
       <updated>1529217593196</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="working demo">
+      <created>1529245941104</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1529245941104</updated>
+    </task>
+    <task id="LOCAL-00048" summary="working demo">
+      <created>1529246169818</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1529246169818</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -809,7 +814,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added decision to resources" />
     <MESSAGE value="added roomObj" />
     <MESSAGE value="added working Drawer class" />
     <MESSAGE value="minor fixes" />
@@ -834,7 +838,8 @@
     <MESSAGE value="barely working" />
     <MESSAGE value="updated readme" />
     <MESSAGE value="locations working for demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="locations working for demo" />
+    <MESSAGE value="working demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="working demo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -972,13 +977,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/images/imageList.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/gamedat/locations.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -1090,16 +1088,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/states/LocationState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="e#832#833#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/models/puzzleModels/WinPuzzle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
@@ -1181,31 +1169,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/states/DecisionState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
-          <folding>
-            <element signature="e#1238#1239#0" expanded="true" />
-            <element signature="e#1267#1268#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/states/IntroState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/states/DialogueState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="49" column="24" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/models/Decision.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
@@ -1259,6 +1222,49 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/states/DecisionState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+          <folding>
+            <element signature="e#1238#1239#0" expanded="true" />
+            <element signature="e#1267#1268#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/states/DialogueState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="56" column="43" selection-start-line="56" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/states/LocationState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="29" column="18" lean-forward="true" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+          <folding>
+            <element signature="e#807#808#0" expanded="true" />
+            <element signature="e#832#833#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/images/imageList.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/states/IntroState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="29" column="13" lean-forward="true" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
         </state>
       </provider>
     </entry>
