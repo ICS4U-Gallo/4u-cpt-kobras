@@ -10,6 +10,7 @@ import java.awt.*;
 
 public class PianoPuzzle extends Puzzle {
     int index = 0;
+    boolean allCorrect = false;
     ImgObj p1 = Content.images.get(31);
     ImgObj p2 = Content.images.get(32);
     ImgObj p3 = Content.images.get(33);
@@ -23,7 +24,6 @@ public class PianoPuzzle extends Puzzle {
 
     boolean showSeq = true;
     boolean showIncorrect = false;
-    int timesClicked = 0;
 
     public PianoPuzzle(int id, int dialogue) {
         super(id, dialogue);
@@ -47,6 +47,9 @@ public class PianoPuzzle extends Puzzle {
         Drawer.draw(g, p5);
         Drawer.draw(g, p6);
         if (showSeq) {
+            g.setColor(Color.WHITE);
+            g.fillRect(250,400 , 200,50 );
+            g.setColor(Color.BLACK);
             g.drawString("Play this sequence: 2, 1, 5, 5, 3, 6", 250, 400);
         }
         else {
@@ -69,18 +72,7 @@ public class PianoPuzzle extends Puzzle {
 
     @Override
     public boolean passed() {
-        if (timesClicked == 6) {
-            for (int i = 0; i < played.length; i++) {
-                if (played[i] != sequence[i]) {
-                    showSeq = true;
-                    showIncorrect = true;
-                    timesClicked = 0;
-                    return false;
-                }
-            }
-            return true;
-        }
-        return false;
+        return allCorrect;
     }
 
     @Override
@@ -98,43 +90,35 @@ public class PianoPuzzle extends Puzzle {
     @Override
     public void handleInput() {
         if (Mouse.isClicked()) {
-                if (Mouse.isCollided(p1)) {
-                    played[index] = 1;
-                    timesClicked++;
-                    showSeq = false;
-                    showIncorrect = false;
-                } else if (Mouse.isCollided(p2)) {
-                    played[index] = 2;
-                    timesClicked++;
-                    showSeq = false;
-                    showIncorrect = false;
-                } else if (Mouse.isCollided(p3)) {
-                    played[index] = 3;
-                    timesClicked++;
-                    showSeq = false;
-                    showIncorrect = false;
-                } else if (Mouse.isCollided(p4)) {
-                    played[index] = 4;
-                    timesClicked++;
-                    showSeq = false;
-                    showIncorrect = false;
-                } else if (Mouse.isCollided(p5)) {
-                    played[index] = 5;
-                    timesClicked++;
-                    showSeq = false;
-                    showIncorrect = false;
-                } else if (Mouse.isCollided(p6)) {
-                    played[index] = 6;
-                    timesClicked++;
-                    showSeq = false;
-                    showIncorrect = false;
-                } else {
-                    played[index] = 0;
-                    timesClicked++;
-                    showSeq = false;
-                    showIncorrect = false;
+            index++;
+            showSeq = false;
+            if (Mouse.isCollided(p1)) {
+                played[index] = 1;
+            } else if (Mouse.isCollided(p2)) {
+                played[index] = 2;
+            } else if (Mouse.isCollided(p3)) {
+                played[index] = 3;
+            } else if (Mouse.isCollided(p4)) {
+                played[index] = 4;
+            } else if (Mouse.isCollided(p5)) {
+                played[index] = 5;
+            } else if (Mouse.isCollided(p6)) {
+                played[index] = 6;
+            } else {
+                played[index] = 0;
+            }
+            for(int i = 0; i < index;i++) {
+                if(played[i] != sequence[i]) {
+                    index = -1;
+                    showSeq = true;
+                    showIncorrect = true;
+                    break;
                 }
-                for(int i = 0; i < )
+            }
+            showIncorrect = false;
+            if(index == 5) {
+                allCorrect = true;
+            }
         }
     }
 
