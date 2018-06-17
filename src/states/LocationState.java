@@ -52,8 +52,9 @@ public class LocationState extends State {
             Drawer.draw(g,a);
         }
         // draw room obj
-
-        //Drawer.draw(g, location.getDialogue().obj);
+        if(location.getDialogue().getID() != -1) {
+            Drawer.draw(g, location.getDialogue().obj);
+        }
         if(questing) {
             Drawer.draw(g, Storyline.quests.get(Storyline.currQuest).dialogue.obj);
         }
@@ -68,6 +69,14 @@ public class LocationState extends State {
 
     @Override
     public void handleInput() {
+        //if mouse collides with entity spot start dialogue
+        if(questing) {
+            if (Mouse.isCollided(Storyline.quests.get(Storyline.currQuest).dialogue.obj)) {
+                sm.setState(DIALOGUE, Storyline.quests.get(Storyline.currQuest).dialogue.getID());
+            }
+        }else if(Mouse.isCollided(location.getDialogue().getObj())) {
+            sm.setState(DIALOGUE, location.getDialogue().getID());
+        }
 
         // if mouse clicked arrow button
         if(Mouse.isClicked()) {
@@ -81,16 +90,7 @@ public class LocationState extends State {
                 }
             }
 
-             //if mouse collides with entity spot start dialogue
-            if(location.getDialogue().getID() != -1) {
-                if(Mouse.isCollided(location.getDialogue().getObj())) {
-                    sm.setState(DIALOGUE, location.getDialogue().getID());
-                } else if(questing) {
-                    if(Mouse.isCollided(Storyline.quests.get(Storyline.currQuest).dialogue.obj)) {
-                        sm.setState(DIALOGUE, Storyline.quests.get(Storyline.currQuest).dialogue.getID());
-                    }
-                }
-            }
+
 
         }
 

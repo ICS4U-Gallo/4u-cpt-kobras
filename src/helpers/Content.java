@@ -34,7 +34,7 @@ public class Content {
         initLocations();
         initQuests();
         setDecisions();
-        System.out.println(dialogues.get(1).decision.id);
+
     }
 
     private static void setDecisions() {
@@ -48,10 +48,30 @@ public class Content {
 
 
     public static void initPuzzles() {
-        puzzles.put(-1,new WinPuzzle());
-        puzzles.put(0,new PianoPuzzle());
-        puzzles.put(1,new WirePuzzle());
-        puzzles.put(2,new StoryPuzzle());
+        Scanner sc = null;
+        try {
+            sc = new Scanner(new FileReader("resources/gamedat/puzzles.txt"));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        while(sc.hasNextLine()) {
+            Scanner sc2 = new Scanner(sc.nextLine());
+            int id = sc2.nextInt();
+            int puzzType = sc2.nextInt();
+            int dialogue = sc2.nextInt();
+            switch (puzzType) {
+                case -1:  puzzles.put(id,new WinPuzzle(id,dialogue));
+                    break;
+                case 0: puzzles.put(id,new PianoPuzzle(id,dialogue));
+                    break;
+                case 1: puzzles.put(id,new WirePuzzle(id,dialogue));
+                    break;
+                case 2: puzzles.put(id,new StoryPuzzle(id,dialogue));
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 
 

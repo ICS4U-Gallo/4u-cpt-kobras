@@ -3,9 +3,13 @@ package models.puzzleModels;
 import java.awt.*;
 
 public class PianoPuzzle extends Puzzle {
+    public PianoPuzzle(int id, int dialogue) {
+        super(id, dialogue);
+    }
+
     @Override
     public void init() {
-
+        isCompleted= false;
     }
 
     @Override

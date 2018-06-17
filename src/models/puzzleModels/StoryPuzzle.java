@@ -35,9 +35,13 @@ public class StoryPuzzle extends Puzzle {
             words[2] + ", and it " + words[3] + " very " + words[1] + "ly! \nYou were " + words[4] + ", and you " +
             "hurried away, wondering about the fate of your half-eaten " + words[0] + ".";
 
+    public StoryPuzzle(int id, int dialogue) {
+        super(id, dialogue);
+    }
+
     @Override
     public void init() {
-
+        isCompleted= false;
     }
 
     @Override

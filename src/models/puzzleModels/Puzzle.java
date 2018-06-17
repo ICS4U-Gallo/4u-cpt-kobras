@@ -10,6 +10,11 @@ public abstract class Puzzle {
     protected boolean isCompleted;
     private int dialogue;
 
+    public Puzzle(int id, int dialogue) {
+        this.id = id;
+        this.dialogue = dialogue;
+    }
+
     public Dialogue getDialogue() {return Content.dialogues.get(dialogue);}
 
 

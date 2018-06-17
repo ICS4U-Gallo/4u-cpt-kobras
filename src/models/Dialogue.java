@@ -31,7 +31,7 @@ public class Dialogue {
 
     public boolean hasDecision() {
         if(decision.id == -1)
-        return false;
+            return false;
         return true;
     }
 

@@ -29,9 +29,14 @@ public class WirePuzzle extends Puzzle {
     boolean[] correct = {false, true, false, false, false, false, true, true, false, false, false, true};
     boolean quit = false;
 
+    public WirePuzzle(int id, int dialogue) {
+        super(id, dialogue);
+    }
+
 
     @Override
     public void init() {
+        isCompleted = false;
         for (int i = 0; i < pipes.length; i++){
             pipes[i] = Content.images.get(51+i);
         }

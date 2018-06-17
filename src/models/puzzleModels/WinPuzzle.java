@@ -4,9 +4,13 @@ import java.awt.*;
 
 public class WinPuzzle extends Puzzle {
 
+    public WinPuzzle(int id, int dialogue) {
+        super(id, dialogue);
+    }
+
     @Override
     public void init() {
-        isCompleted = false;
+        isCompleted = true;
     }
 
     @Override
