@@ -4,6 +4,7 @@ import game.StateManager;
 import helpers.Content;
 import helpers.Drawer;
 import helpers.Mouse;
+import helpers.TextOutput;
 import models.ImgObj;
 import models.Location;
 import models.storyline.Storyline;
@@ -49,8 +50,10 @@ public class LocationState extends State {
 
         // draw background
         Drawer.draw(g,location.getBackground());
-        for(ImgObj a: arrows) {
-            Drawer.draw(g,a);
+        for(int i = 0; i < 4; i++) {
+            if(location.getDirection(i) != -1) {
+                Drawer.draw(g,arrows[i] );
+            }
         }
         // draw room obj
         if(location.getDialogue().getID() != -1) {
@@ -85,7 +88,7 @@ public class LocationState extends State {
                 if(Mouse.isCollided(arrows[i])) {
                     int move = location.getDirection(i);
                     if(move != -1) {
-
+                        TextOutput.s = "";
                         location = Content.locations.get(move);
                     }
                 }

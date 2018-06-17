@@ -40,6 +40,7 @@ public class DialogueState extends State {
     public void update() {
         handleInput();
         TextOutput.s = speakers[index].name + ":\n"+ speakers[index].text;
+        TextOutput.formatString();
 
     }
 

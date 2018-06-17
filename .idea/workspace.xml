@@ -1,16 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="048aea2d-944e-40ee-99d1-0285c1299e91" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/images/ending.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/states/EndState.java" afterDir="false" />
+    <list default="true" id="a584b8b6-5c0f-4221-9435-fc6d9866463f" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/cpt.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/note.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/peopleImg/student.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/gamedat/dialogue/d1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/gamedat/dialogue/d1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/gamedat/dialogue/d2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/gamedat/dialogue/d2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/gamedat/dialogue/d3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/gamedat/dialogue/d3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/gamedat/locations.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/gamedat/locations.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/gamedat/quests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/gamedat/quests.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/images/imageList.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/imageList.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/StateManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/StateManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Dialogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Dialogue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/storyline/Storyline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/storyline/Storyline.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers/TextOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/TextOutput.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/states/DialogueState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/states/DialogueState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/states/IntroState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/states/IntroState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/states/LocationState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/states/LocationState.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,12 +32,30 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DialogueState.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/states/DialogueState.java">
+    <leaf>
+      <file leaf-file-name="Speaker.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/models/Speaker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="966">
-              <caret line="55" column="20" selection-start-line="55" selection-end-line="56" />
+            <state relative-caret-position="273">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="quests.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/gamedat/quests.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StateManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/StateManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="74">
+              <caret line="80" selection-start-line="80" selection-end-line="80" />
             </state>
           </provider>
         </entry>
@@ -35,197 +63,171 @@
       <file leaf-file-name="LocationState.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/states/LocationState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
+            <state relative-caret-position="177">
+              <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EndState.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/states/EndState.java">
+      <file leaf-file-name="locations.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/gamedat/locations.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="105">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DecisionState.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/states/DecisionState.java">
+      <file leaf-file-name="d2.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/gamedat/dialogue/d2.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
-              <folding>
-                <element signature="e#1238#1239#0" expanded="true" />
-                <element signature="e#1267#1268#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="147">
+              <caret line="7" column="64" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="d3.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/gamedat/dialogue/d3.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="d1.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/gamedat/dialogue/d1.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="imageList.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/images/imageList.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="735">
+              <caret line="35" column="49" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TextOutput.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/helpers/TextOutput.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="UPDATE_TYPE" value="MERGE" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/game/Main.java" />
-        <option value="$PROJECT_DIR$/src/stateFolder/DecisionState.java" />
-        <option value="$PROJECT_DIR$/src/states/State.java" />
-        <option value="$PROJECT_DIR$/src/models/roomObj.java" />
-        <option value="$PROJECT_DIR$/src/game/Mouse.java" />
-        <option value="$PROJECT_DIR$/src/models/imgObj.java" />
-        <option value="$PROJECT_DIR$/src/game/Content.java" />
-        <option value="$PROJECT_DIR$/src/helpers/GraphicKo.java" />
-        <option value="$PROJECT_DIR$/src/helpers/Drawer.java" />
-        <option value="$PROJECT_DIR$/src/models/ImgObj.java" />
-        <option value="$PROJECT_DIR$/src/helpers/Mouse.java" />
-        <option value="$PROJECT_DIR$/src/states/MenuState.java" />
-        <option value="$PROJECT_DIR$/src/models/Speaker.java" />
-        <option value="$PROJECT_DIR$/src/models/Player.java" />
-        <option value="$PROJECT_DIR$/src/models/storyline/Quest.java" />
-        <option value="$PROJECT_DIR$/src/helpers/TextOutput.java" />
-        <option value="$PROJECT_DIR$/src/models/puzzleModels/SimonPuzzle.java" />
-        <option value="$PROJECT_DIR$/src/models/PuzzImg.java" />
-        <option value="$PROJECT_DIR$/resources/images/puzzImages.txt" />
-        <option value="$PROJECT_DIR$/resources/gamedat/dialogue/d3.txt" />
-        <option value="$PROJECT_DIR$/resources/gamedat/dialogue/d4.txt" />
-        <option value="$PROJECT_DIR$/resources/gamedat/dialogue/d5.txt" />
-        <option value="$PROJECT_DIR$/resources/gamedat/dialogue/d6.txt" />
-        <option value="$PROJECT_DIR$/src/models/Location.java" />
-        <option value="$PROJECT_DIR$/resources/gamedat/decisions.txt" />
-        <option value="$PROJECT_DIR$/src/game/GamePanel.java" />
-        <option value="$PROJECT_DIR$/src/models/Decision.java" />
-        <option value="$PROJECT_DIR$/resources/gamedat/dialogue/d1.txt" />
-        <option value="$PROJECT_DIR$/resources/gamedat/dialogues.txt" />
-        <option value="$PROJECT_DIR$/resources/gamedat/locations.txt" />
-        <option value="$PROJECT_DIR$/src/states/DecisionState.java" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/models/puzzleModels/Puzzle.java" />
-        <option value="$PROJECT_DIR$/resources/gamedat/puzzles.txt" />
-        <option value="$PROJECT_DIR$/src/models/puzzleModels/PianoPuzzle.java" />
-        <option value="$PROJECT_DIR$/src/models/puzzleModels/StoryPuzzle.java" />
-        <option value="$PROJECT_DIR$/src/models/puzzleModels/WinPuzzle.java" />
-        <option value="$PROJECT_DIR$/src/models/puzzleModels/WirePuzzle.java" />
-        <option value="$PROJECT_DIR$/src/helpers/Content.java" />
-        <option value="$PROJECT_DIR$/src/states/puzzleState.java" />
-        <option value="$PROJECT_DIR$/resources/gamedat/dialogue/d2.txt" />
-        <option value="$PROJECT_DIR$/resources/gamedat/dialogue/d-1.txt" />
-        <option value="$PROJECT_DIR$/resources/gamedat/quests.txt" />
-        <option value="$PROJECT_DIR$/src/models/storyline/Storyline.java" />
-        <option value="$PROJECT_DIR$/src/states/IntroState.java" />
-        <option value="$PROJECT_DIR$/resources/images/imageList.txt" />
-        <option value="$PROJECT_DIR$/src/game/StateManager.java" />
         <option value="$PROJECT_DIR$/src/states/DialogueState.java" />
-        <option value="$PROJECT_DIR$/src/models/Dialogue.java" />
-        <option value="$PROJECT_DIR$/src/states/EndState.java" />
+        <option value="$PROJECT_DIR$/src/game/GamePanel.java" />
+        <option value="$PROJECT_DIR$/resources/gamedat/dialogue/d3.txt" />
+        <option value="$PROJECT_DIR$/resources/images/imageList.txt" />
+        <option value="$PROJECT_DIR$/resources/gamedat/dialogue/d2.txt" />
+        <option value="$PROJECT_DIR$/resources/gamedat/dialogue/d1.txt" />
+        <option value="$PROJECT_DIR$/src/helpers/TextOutput.java" />
+        <option value="$PROJECT_DIR$/resources/gamedat/quests.txt" />
+        <option value="$PROJECT_DIR$/src/game/StateManager.java" />
+        <option value="$PROJECT_DIR$/resources/gamedat/locations.txt" />
         <option value="$PROJECT_DIR$/src/states/LocationState.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="607" />
-    <option name="y" value="-8" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="615" />
     <option name="width" value="1260" />
-    <option name="height" value="1047" />
+    <option name="height" value="1038" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="school project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="school project" type="462c0819:PsiDirectoryNode" />
+              <item name="cpt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cpt" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="school project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="school project" type="462c0819:PsiDirectoryNode" />
+              <item name="cpt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cpt" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="school project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="school project" type="462c0819:PsiDirectoryNode" />
+              <item name="cpt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cpt" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="gamedat" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="school project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="school project" type="462c0819:PsiDirectoryNode" />
+              <item name="cpt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cpt" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="gamedat" type="462c0819:PsiDirectoryNode" />
               <item name="dialogue" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="school project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="school project" type="462c0819:PsiDirectoryNode" />
+              <item name="cpt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cpt" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="school project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="school project" type="462c0819:PsiDirectoryNode" />
+              <item name="cpt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cpt" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="peopleImg" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cpt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cpt" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="school project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="school project" type="462c0819:PsiDirectoryNode" />
+              <item name="cpt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cpt" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="school project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="school project" type="462c0819:PsiDirectoryNode" />
+              <item name="cpt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cpt" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
               <item name="GamePanel.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
             <path>
-              <item name="school project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="school project" type="462c0819:PsiDirectoryNode" />
+              <item name="cpt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cpt" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="helpers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="school project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="school project" type="462c0819:PsiDirectoryNode" />
+              <item name="cpt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cpt" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="school project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="school project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="puzzleModels" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="school project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="school project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="storyline" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="school project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="school project" type="462c0819:PsiDirectoryNode" />
+              <item name="cpt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cpt" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="states" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -233,29 +235,18 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="net.orfjackal.sbt.plugin.settings.SbtConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Victor\IdeaProjects-KoV\school project\resources\images" />
-      <recent name="C:\Users\Victor\IdeaProjects-KoV\school project\resources\images\locationImg" />
-      <recent name="C:\Users\Victor\IdeaProjects-KoV\school project\src" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Victor\IdeaProjects-KoV\school project\resources\images\locationImg" />
-      <recent name="C:\Users\Victor\IdeaProjects-KoV\school project\resources\gamedat" />
-      <recent name="C:\Users\Victor\IdeaProjects-KoV\school project\resources\images" />
-      <recent name="C:\Users\Victor\IdeaProjects-KoV\school project\resources" />
+      <recent name="C:\Users\Victor\IdeaProjects-KoV\cpt\resources\images\peopleImg" />
+      <recent name="C:\Users\Victor\IdeaProjects-KoV\cpt\resources\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -270,37 +261,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="game.Main" />
-      <module name="school project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="game.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="school project" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="game.Main" />
-      <module name="school project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="helpers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="game.Main" />
-      <module name="school project" />
+      <module name="cpt" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="game.*" />
@@ -309,559 +277,152 @@
       </extension>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
-    <list>
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Application.Main (1)" />
-    </list>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$/../athlete-manage" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../athlete-manage2" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../bookstoreapp-VKo232" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../ko-my-first-app" value="PREVIEW" />
+      </map>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="048aea2d-944e-40ee-99d1-0285c1299e91" name="Default" comment="" />
-      <created>1526598237963</created>
+      <changelist id="a584b8b6-5c0f-4221-9435-fc6d9866463f" name="Default" comment="" />
+      <created>1529250055240</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1526598237963</updated>
+      <updated>1529250055240</updated>
     </task>
-    <task id="LOCAL-00001" summary="first commit sort of...">
-      <created>1526610329688</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1526610329688</updated>
-    </task>
-    <task id="LOCAL-00002" summary="added state">
-      <created>1526610947402</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1526610947402</updated>
-    </task>
-    <task id="LOCAL-00003" summary="added states">
-      <created>1526707120483</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1526707120483</updated>
-    </task>
-    <task id="LOCAL-00004" summary="added more empty classes and abstract classes">
-      <created>1526738161927</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1526738161927</updated>
-    </task>
-    <task id="LOCAL-00005" summary="done GamePanel and Main">
-      <created>1526766825882</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1526766825882</updated>
-    </task>
-    <task id="LOCAL-00006" summary="added Mouse and functionality to mouse">
-      <created>1526771245738</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1526771245738</updated>
-    </task>
-    <task id="LOCAL-00007" summary="added Mouse and functionality to mouse">
-      <created>1526780385959</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1526780385959</updated>
-    </task>
-    <task id="LOCAL-00008" summary="changed StateManger to StateManager and images work">
-      <created>1526789635553</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1526789635553</updated>
-    </task>
-    <task id="LOCAL-00009" summary="added Javadocs">
-      <created>1526794265740</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1526794265740</updated>
-    </task>
-    <task id="LOCAL-00010" summary="done player">
-      <created>1526826729426</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1526826729427</updated>
-    </task>
-    <task id="LOCAL-00011" summary="fix player">
-      <created>1526826774787</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1526826774787</updated>
-    </task>
-    <task id="LOCAL-00012" summary="started Dialogue class">
-      <created>1526828521657</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1526828521657</updated>
-    </task>
-    <task id="LOCAL-00013" summary="added DecisionState">
-      <created>1526837913883</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1526837913883</updated>
-    </task>
-    <task id="LOCAL-00014" summary="finished dialogue and location">
-      <created>1526846617713</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1526846617713</updated>
-    </task>
-    <task id="LOCAL-00015" summary="finished decision">
-      <created>1526850338212</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1526850338212</updated>
-    </task>
-    <task id="LOCAL-00016" summary="many fixes">
-      <created>1526870067918</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1526870067918</updated>
-    </task>
-    <task id="LOCAL-00017" summary="started Content">
-      <created>1526878130299</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1526878130299</updated>
-    </task>
-    <task id="LOCAL-00018" summary="added parts to Content">
-      <created>1526879762696</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1526879762696</updated>
-    </task>
-    <task id="LOCAL-00019" summary="added drag to mouse">
-      <created>1526914229117</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1526914229117</updated>
-    </task>
-    <task id="LOCAL-00020" summary="added quest and storyline class">
-      <created>1526914802143</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1526914802143</updated>
-    </task>
-    <task id="LOCAL-00021" summary="added decision to resources">
-      <created>1526914857074</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1526914857074</updated>
-    </task>
-    <task id="LOCAL-00022" summary="added decision to resources">
-      <created>1526926524098</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1526926524098</updated>
-    </task>
-    <task id="LOCAL-00023" summary="added roomObj">
-      <created>1527017208438</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1527017208438</updated>
-    </task>
-    <task id="LOCAL-00024" summary="added working Drawer class">
-      <created>1527021457992</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1527021457992</updated>
-    </task>
-    <task id="LOCAL-00025" summary="minor fixes">
-      <created>1527023098192</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1527023098192</updated>
-    </task>
-    <task id="LOCAL-00026" summary="gave IDs back to objects">
-      <created>1527025238773</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1527025238773</updated>
-    </task>
-    <task id="LOCAL-00027" summary="updates here and there">
-      <created>1527025737965</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1527025737965</updated>
-    </task>
-    <task id="LOCAL-00028" summary="initImage and initLocation are done">
-      <created>1527049373235</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1527049373235</updated>
-    </task>
-    <task id="LOCAL-00029" summary="initDialogue works">
-      <created>1527088143429</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1527088143429</updated>
-    </task>
-    <task id="LOCAL-00030" summary="updates">
-      <created>1527096841987</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1527096841987</updated>
-    </task>
-    <task id="LOCAL-00031" summary="idk">
-      <created>1527099045454</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1527099045454</updated>
-    </task>
-    <task id="LOCAL-00032" summary="working empty map">
-      <created>1527108077947</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1527108077947</updated>
-    </task>
-    <task id="LOCAL-00033" summary="idk at this point...">
-      <created>1527133546139</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1527133546139</updated>
-    </task>
-    <task id="LOCAL-00034" summary="smoother mouse YAY">
-      <created>1527135309780</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1527135309780</updated>
-    </task>
-    <task id="LOCAL-00035" summary="ugh">
-      <created>1527179967605</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1527179967605</updated>
-    </task>
-    <task id="LOCAL-00036" summary="few changes">
-      <created>1528387585133</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1528387585133</updated>
-    </task>
-    <task id="LOCAL-00037" summary="more than a few chnges">
-      <created>1528388785195</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1528388785195</updated>
-    </task>
-    <task id="LOCAL-00038" summary="added more important pseudocode">
-      <created>1528390917199</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1528390917199</updated>
-    </task>
-    <task id="LOCAL-00039" summary="its so late at night but i finally cracked the string message problem BWAHAHAHA">
-      <created>1528433585074</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1528433585074</updated>
-    </task>
-    <task id="LOCAL-00040" summary="starting to look like something">
-      <created>1528479516734</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1528479516734</updated>
-    </task>
-    <task id="LOCAL-00041" summary="slowly implementing the decision stuffs">
-      <created>1528516865597</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1528516865597</updated>
-    </task>
-    <task id="LOCAL-00042" summary="location state is good to go (not tested)">
-      <created>1528603249062</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1528603249062</updated>
-    </task>
-    <task id="LOCAL-00043" summary="Dialoguestate check and same with decisionstate">
-      <created>1528735948210</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1528735948210</updated>
-    </task>
-    <task id="LOCAL-00044" summary="barely working">
-      <created>1529008396618</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1529008396618</updated>
-    </task>
-    <task id="LOCAL-00045" summary="updated readme">
-      <created>1529186421967</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1529186421967</updated>
-    </task>
-    <task id="LOCAL-00046" summary="locations working for demo">
-      <created>1529217593196</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1529217593196</updated>
-    </task>
-    <task id="LOCAL-00047" summary="working demo">
-      <created>1529245941104</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1529245941104</updated>
-    </task>
-    <task id="LOCAL-00048" summary="working demo">
-      <created>1529246169818</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1529246169818</updated>
-    </task>
-    <task id="LOCAL-00049" summary="working demo">
-      <created>1529246465641</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1529246465641</updated>
-    </task>
-    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="492" y="0" width="1008" height="830" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="SBT Console" order="9" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.32518598" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5005208" side_tool="true" weight="0.3209352" />
+      <window_info anchor="bottom" id="TODO" order="8" weight="0.32897604" />
+      <window_info anchor="bottom" id="SBT Console" order="9" weight="0.33115467" />
+      <window_info anchor="bottom" id="Messages" order="1" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49947917" weight="0.3278867" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947917" visible="true" weight="0.26143792" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32897604" />
+      <window_info anchor="bottom" id="Run" order="4" visible="true" weight="0.16138329" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32897604" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32897604" />
       <window_info id="Capture Tool" order="6" />
-      <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33582088" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.24966443" />
+      <window_info id="Designer" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21413502" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39106753" />
       <window_info anchor="bottom" id="Dependency Viewer" order="0" weight="0.32943678" />
       <window_info anchor="right" id="Gradle" order="7" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="4" weight="0.32621083" />
+      <window_info anchor="bottom" id="Find" order="3" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="right" id="sbt" order="4" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="sbt-shell-toolwindow" order="10" weight="0.32897604" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.23853211" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="Designer" order="3" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="SBT Console" order="10" />
-      <window_info anchor="right" id="sbt" order="4" />
-      <window_info anchor="bottom" id="sbt-shell-toolwindow" order="11" weight="0.32897604" />
-      <window_info id="Image Layers" order="2" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49947917" visible="true" weight="0.26143792" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.32897604" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.5005208" side_tool="true" weight="0.3209352" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.23853211" />
-      <window_info anchor="bottom" id="Find" order="5" weight="0.32621083" />
-      <window_info anchor="bottom" id="Dependency Viewer" order="0" weight="0.32943678" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49947917" weight="0.3278867" />
-      <window_info anchor="right" id="Maven Projects" order="7" />
-      <window_info anchor="right" id="Gradle" order="8" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33582088" />
-      <window_info anchor="bottom" id="Messages" order="1" weight="0.32518598" />
+      <window_info anchor="right" id="sbt" order="4" />
       <window_info anchor="bottom" id="Message" order="2" />
-      <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="9" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.24966443" />
-      <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.39106753" />
-    </layout-to-restore>
+      <window_info anchor="bottom" id="sbt-shell-toolwindow" order="10" weight="0.32897604" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="added roomObj" />
-    <MESSAGE value="added working Drawer class" />
-    <MESSAGE value="minor fixes" />
-    <MESSAGE value="gave IDs back to objects" />
-    <MESSAGE value="updates here and there" />
-    <MESSAGE value="initImage and initLocation are done" />
-    <MESSAGE value="initDialogue works" />
-    <MESSAGE value="updates" />
-    <MESSAGE value="idk" />
-    <MESSAGE value="working empty map" />
-    <MESSAGE value="idk at this point..." />
-    <MESSAGE value="smoother mouse YAY" />
-    <MESSAGE value="ugh" />
-    <MESSAGE value="few changes" />
-    <MESSAGE value="more than a few chnges" />
-    <MESSAGE value="added more important pseudocode" />
-    <MESSAGE value="its so late at night but i finally cracked the string message problem BWAHAHAHA" />
-    <MESSAGE value="starting to look like something" />
-    <MESSAGE value="slowly implementing the decision stuffs" />
-    <MESSAGE value="location state is good to go (not tested)" />
-    <MESSAGE value="Dialoguestate check and same with decisionstate" />
-    <MESSAGE value="barely working" />
-    <MESSAGE value="updated readme" />
-    <MESSAGE value="locations working for demo" />
-    <MESSAGE value="working demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="working demo" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url />
-          <line>58</line>
-          <properties />
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/states/puzzleState.java</url>
-          <line>37</line>
-          <properties />
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/models/puzzleModels/WinPuzzle.java</url>
-          <line>22</line>
-          <properties />
-          <option name="timeStamp" value="49" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="50" />
-    </breakpoint-manager>
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="decision.dialogues" />
-      </configuration>
-    </watches-manager>
-  </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="watch">
-      <expression>
-        <expression-string>sc2.source</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/gamedat/locations.txt">
+    <entry file="file://$PROJECT_DIR$/cpt.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/school project.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+        <state relative-caret-position="84">
+          <caret line="4" column="39" lean-forward="true" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/javax/swing/text/PlainView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="270" selection-start-line="270" selection-end-line="270" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/javax/swing/BoxLayout.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8988">
-          <caret line="464" selection-start-line="464" selection-end-line="464" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/states/MapState.java" />
     <entry file="file://$PROJECT_DIR$/src/game/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="231">
+          <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/Achievement.java" />
+    <entry file="file://$PROJECT_DIR$/resources/gamedat/dialogues.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/gamedat/decisions.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/helpers/Keys.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -869,20 +430,132 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/puzzleModels/SimonPuzzle.java" />
-    <entry file="file://$PROJECT_DIR$/src/states/MenuState.java">
+    <entry file="file://$PROJECT_DIR$/src/helpers/Mouse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+        <state relative-caret-position="21">
+          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/images/puzzImages.txt" />
-    <entry file="file://$PROJECT_DIR$/src/models/PuzzImg.java" />
+    <entry file="file://$PROJECT_DIR$/src/states/IntroState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/states/puzzleState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/states/State.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/states/DecisionState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="64" column="18" lean-forward="true" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/states/DialogueState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="54" column="31" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/states/EndState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/helpers/Drawer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/helpers/Content.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="40" column="29" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/Dialogue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/ImgObj.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/Decision.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/Location.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-109">
+          <caret line="4" column="53" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/GamePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12">
+          <caret line="146" column="13" lean-forward="true" selection-start-line="146" selection-start-column="13" selection-end-line="146" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/gamedat/dialogue/d2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="64" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/gamedat/dialogue/d1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/helpers/TextOutput.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
-          <caret line="9" column="24" selection-start-line="5" selection-start-column="2" selection-end-line="12" selection-end-column="7" />
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -893,399 +566,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/gamedat/dialogue/d4.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/gamedat/dialogue/d5.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/gamedat/dialogue/d6.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/gamedat/dialogues.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/gamedat/locations.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" selection-start-line="3" selection-start-column="10" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/storyline/Quest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/ImgObj.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/Location.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-98">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/models/Speaker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/puzzleModels/StoryPuzzle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="35" column="90" selection-start-line="35" selection-start-column="90" selection-end-line="35" selection-end-column="90" />
-          <folding>
-            <element signature="e#1407#1408#0" expanded="true" />
-            <element signature="e#1442#1443#0" expanded="true" />
-            <element signature="e#1399#1400#0" expanded="true" />
-            <element signature="e#1433#1434#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/puzzleModels/WirePuzzle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#856#857#0" expanded="true" />
-            <element signature="e#891#892#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/helpers/Content.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="73" column="9" selection-start-line="73" selection-start-column="9" selection-end-line="73" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/puzzleModels/PianoPuzzle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-84">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-          <folding>
-            <element signature="e#137#138#0" expanded="true" />
-            <element signature="e#172#173#0" expanded="true" />
-            <element signature="e#129#130#0" expanded="true" />
-            <element signature="e#163#164#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/puzzleModels/WinPuzzle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#134#135#0" expanded="true" />
-            <element signature="e#169#170#0" expanded="true" />
-            <element signature="e#128#129#0" expanded="true" />
-            <element signature="e#162#163#0" expanded="true" />
-            <element signature="e#293#294#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/puzzleModels/Puzzle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/helpers/Drawer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/helpers/Mouse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="96" selection-start-line="96" selection-end-line="96" />
-          <folding>
-            <element signature="e#2126#2127#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/gamedat/puzzles.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/gamedat/dialogue/d-1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/gamedat/dialogue/d1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        <state relative-caret-position="273">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/gamedat/quests.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        <state relative-caret-position="21">
+          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/states/IntroState.java">
+    <entry file="file://$PROJECT_DIR$/resources/gamedat/locations.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/states/State.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#268#269#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/states/puzzleState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="e#405#406#0" expanded="true" />
-            <element signature="e#432#433#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/storyline/Storyline.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/gamedat/decisions.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="10" lean-forward="true" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/GamePanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2121">
-          <caret line="115" selection-start-line="115" selection-end-line="115" />
-          <folding>
-            <element signature="e#4382#4383#0" expanded="true" />
-            <element signature="e#4408#4409#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/images/imageList.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+        <state relative-caret-position="105">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/StateManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1428">
-          <caret line="82" selection-start-line="82" selection-end-line="82" />
-          <folding>
-            <element signature="e#1867#1868#0" expanded="true" />
-            <element signature="e#1899#1900#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="74">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/Decision.java">
+    <entry file="file://$PROJECT_DIR$/resources/images/imageList.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/Dialogue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
-          <folding>
-            <element signature="e#682#683#0" expanded="true" />
-            <element signature="e#713#714#0" expanded="true" />
-            <element signature="e#750#751#0" expanded="true" />
-            <element signature="e#781#782#0" expanded="true" />
-            <element signature="e#938#939#0" expanded="true" />
-            <element signature="e#963#964#0" expanded="true" />
-            <element signature="e#993#994#0" expanded="true" />
-            <element signature="e#1019#1020#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/gamedat/dialogue/d2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="7" selection-start-line="2" selection-start-column="1" selection-end-line="3" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/states/EndState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/states/DecisionState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-          <folding>
-            <element signature="e#1238#1239#0" expanded="true" />
-            <element signature="e#1267#1268#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/states/DialogueState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="966">
-          <caret line="55" column="20" selection-start-line="55" selection-end-line="56" />
+        <state relative-caret-position="735">
+          <caret line="35" column="49" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/states/LocationState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
+        <state relative-caret-position="177">
+          <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
+      <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>school project</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>

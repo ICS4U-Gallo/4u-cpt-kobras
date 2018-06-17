@@ -78,7 +78,6 @@ public class StateManager {
      * @param g
      */
     public void draw(Graphics2D g) {
-        System.out.println(currState);
         if(states[currState] != null) {
             states[currState].draw(g);
         }
