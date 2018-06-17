@@ -1,0 +1,14 @@
+50 0 0 100 100 /images/wirePuzzleImg/wireBegin.png
+51 0 100 100 100 /images/wirePuzzleImg/wire1.png
+52 100 100 100 100 /images/wirePuzzleImg/wire2.png
+53 200 100 100 100 /images/wirePuzzleImg/wire3.png
+54 0 200 100 100 /images/wirePuzzleImg/wire4.png
+55 100 200 100 100 /images/wirePuzzleImg/wire5.png
+56 200 200 100 100 /images/wirePuzzleImg/wire6.png
+57 0 300 100 100 /images/wirePuzzleImg/wire7.png
+58 100 300 100 100 /images/wirePuzzleImg/wire8.png
+59 200 300 100 100 /images/wirePuzzleImg/wire9.png
+60 0 400 100 100 /images/wirePuzzleImg/wire10.png
+61 100 400 100 100 /images/wirePuzzleImg/wire11.png
+62 200 400 100 100 /images/wirePuzzleImg/wire12.png
+63 0 500 100 100 /images/wirePuzzleImg/wireEnd.png
