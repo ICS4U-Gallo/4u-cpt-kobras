@@ -6,6 +6,7 @@ import helpers.Drawer;
 import helpers.Mouse;
 import helpers.TextOutput;
 import models.Dialogue;
+import models.Player;
 import models.Speaker;
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -30,6 +31,7 @@ public class DialogueState extends State {
     @Override
     public void draw(Graphics2D g) {
         // draw background
+        Drawer.draw(g,Content.locations.get(Player.location).getBackground() );
         // draw the character
         Drawer.draw(g,speakers[index].image);
     }
