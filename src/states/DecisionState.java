@@ -39,8 +39,8 @@ public class DecisionState extends State {
         g.fillRect(0,325 , 280,50 );
         g.fillRect(325,325 ,280 , 50);
         g.setColor(Color.BLACK);
-        g.drawString(decision.choices[LEFT], 5,330 );
-        g.drawString(decision.choices[RIGHT],330 ,330 );
+        g.drawString(decision.choices[LEFT], 5,340 );
+        g.drawString(decision.choices[RIGHT],330 ,340 );
 
 
     }

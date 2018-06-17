@@ -4,7 +4,7 @@
 102 550 275 50 50 /images/locationImg/arrowRight.png
 105 100 250 400 100 /images/startBtn.png
 -1 0 0 0 0 /images/empty.png
-97 100 300 25 25 /images/note.png
+97 100 300 50 50 /images/note.png
 100 0 0 600 600 /images/empty.png
 99 0 0 600 600 /images/intro.jpg
 98 0 0 600 600 /images/ending.jpg
@@ -33,4 +33,7 @@
 21 250 450 100 100 /images/chbutton1.png
 22 400 450 100 100 /images/chbutton1.png
 -5 20 680 100 100 /images/exit.png
-500 300 100 100 300 /images/peopleImg/student.png
+500 300 200 200 500 /images/peopleImg/student.png
+501 300 200 200 300 /images/peopleImg/pavalanni.png
+502 300 200 200 400 /images/peopleImg/nach.png
+503 300 200 200 300 /images/peopleImg/laggo.png

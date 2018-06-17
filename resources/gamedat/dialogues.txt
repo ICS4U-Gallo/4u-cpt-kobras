@@ -1,3 +1,5 @@
 resources/gamedat/dialogue/d-1.txt
 resources/gamedat/dialogue/d1.txt
 resources/gamedat/dialogue/d2.txt
+resources/gamedat/dialogue/d3.txt
+resources/gamedat/dialogue/d4.txt

@@ -6,3 +6,7 @@ choice 2
 follow mr.nach
 resistance is futile
 2 2 1 1 -1
+2
+Go to class
+Too bad you're already here
+3 3 1 1 0

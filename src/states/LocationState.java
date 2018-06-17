@@ -24,7 +24,7 @@ import static game.StateManager.INTRO;
 public class LocationState extends State {
 
     private static ImgObj[] arrows = {Content.images.get(101),Content.images.get(102), Content.images.get(103), Content.images.get(104)};
-    private static Location location = Content.locations.get(0);
+    public static Location location = Content.locations.get(0);
     private static boolean questing;
 
 
@@ -90,6 +90,7 @@ public class LocationState extends State {
                     if(move != -1) {
                         TextOutput.s = "";
                         location = Content.locations.get(move);
+                        init();
                     }
                 }
             }
