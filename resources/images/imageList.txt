@@ -39,3 +39,9 @@
 21 250 450 100 100 /images/chbutton1.png
 22 400 450 100 100 /images/chbutton1.png
 -5 20 680 100 100 /images/exit.png
+31 0 0 100 250 /images/piano1.png
+32 100 0 100 250 /images/piano2.png
+33 200 0 100 250 /images/piano3.png
+34 300 0 100 250 /images/piano4.png
+35 400 0 100 250 /images/piano5.png
+36 500 0 100 250 /images/piano6.png
