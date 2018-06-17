@@ -13,3 +13,6 @@ resources/gamedat/dialogue/d11.txt
 resources/gamedat/dialogue/d12.txt
 resources/gamedat/dialogue/d13.txt
 resources/gamedat/dialogue/d14.txt
+resources/gamedat/dialogue/d15.txt
+resources/gamedat/dialogue/d16.txt
+resources/gamedat/dialogue/d17.txt

@@ -3,6 +3,7 @@ package models.puzzleModels;
 import helpers.Content;
 import helpers.Drawer;
 import helpers.Mouse;
+import helpers.TextOutput;
 import models.ImgObj;
 import states.LocationState;
 
@@ -47,26 +48,32 @@ public class PianoPuzzle extends Puzzle {
         Drawer.draw(g, p5);
         Drawer.draw(g, p6);
         if (showSeq) {
-            g.setColor(Color.WHITE);
-            g.fillRect(245,395 , 300,40 );
-            g.setColor(Color.BLACK);
-            g.drawString("Play this sequence: 2, 1, 5, 5, 3, 6", 250, 400);
+            TextOutput.s = "Play this sequence: 2, 1, 5, 5, 3, 6";
+//            g.setColor(Color.WHITE);
+//            g.fillRect(245,395 , 300,40 );
+//            g.setColor(Color.BLACK);
+//            g.drawString("Play this sequence: 2, 1, 5, 5, 3, 6", 250, 400);
         }
         else {
             // cover sequence
-            g.setColor(Color.WHITE);
-            g.fillRect(245, 395, 300, 40);
-            g.setColor(Color.BLACK);
+            TextOutput.s = "";
+//            g.setColor(Color.WHITE);
+//            g.fillRect(245, 395, 300, 40);
+//            g.setColor(Color.BLACK);
         }
 
         if (showIncorrect) {
-            g.drawString("Nope! Try again.", 300, 450);
+            TextOutput.s += "\nNope! Try again.";
+//            g.setColor(Color.WHITE);
+//            g.fillRect(295, 445, 200, 40);
+//            g.setColor(Color.BLACK);
+//            g.drawString("Nope! Try again.", 300, 450);
         }
         else {
             // cover incorrect warning
-            g.setColor(Color.WHITE);
-            g.fillRect(295, 445, 200, 40);
-            g.setColor(Color.BLACK);
+//            g.setColor(Color.WHITE);
+//            g.fillRect(295, 445, 200, 40);
+//            g.setColor(Color.BLACK);
         }
     }
 
@@ -90,7 +97,6 @@ public class PianoPuzzle extends Puzzle {
     @Override
     public void handleInput() {
         if (Mouse.isClicked()) {
-            index++;
             showSeq = false;
             if (Mouse.isCollided(p1)) {
                 played[index] = 1;
@@ -107,9 +113,10 @@ public class PianoPuzzle extends Puzzle {
             } else {
                 played[index] = 0;
             }
+            index++;
             for(int i = 0; i < index;i++) {
                 if(played[i] != sequence[i]) {
-                    index = -1;
+                    index = 0;
                     showSeq = true;
                     showIncorrect = true;
                     return;

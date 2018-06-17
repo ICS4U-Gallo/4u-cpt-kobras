@@ -3,6 +3,7 @@ package models.puzzleModels;
 import helpers.Content;
 import helpers.Drawer;
 import helpers.Mouse;
+import helpers.TextOutput;
 import models.Dialogue;
 import models.ImgObj;
 
@@ -44,8 +45,9 @@ public class WirePuzzle extends Puzzle {
 
     @Override
     public void draw(Graphics2D g) {
-        g.setColor(Color.BLACK);
-        g.drawString("Find a path for the wires to connect from start to end", 50, 50);
+        g.fillRect(0,0 ,600 ,600 );
+        //g.setColor(Color.BLACK);
+        TextOutput.s ="Find a path for the wires to connect from start to end";
         Drawer.draw(g, pstart);
         Drawer.draw(g, pend);
         for(int i = 0; i < pipes.length; i++) {
