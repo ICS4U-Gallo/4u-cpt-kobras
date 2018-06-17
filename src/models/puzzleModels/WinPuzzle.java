@@ -10,12 +10,10 @@ public class WinPuzzle extends Puzzle {
 
     @Override
     public void init() {
-        isCompleted = true;
     }
 
     @Override
     public void draw(Graphics2D g) {
-
     }
 
     @Override

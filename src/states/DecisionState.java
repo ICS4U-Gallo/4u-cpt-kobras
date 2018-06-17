@@ -12,12 +12,9 @@ public class DecisionState extends State {
     public static final int PUZZLE = 1;
     public static final int DIALOGUE = 2;
     public static final int GRADE = 3;
-    public static final int MARK = 4;
-    public static final int SOCIAL = 5;
 
-    String[] choices = new String[2];
-    private static final int RIGHT = 0;
-    private static final int LEFT = 1;
+    private static final int LEFT = 0;
+    private static final int RIGHT = 1;
     private static Decision decision;
     private static int choice;
 
@@ -54,19 +51,21 @@ public class DecisionState extends State {
     public void handleInput() {
         // if clicked on one option then check the effects of that option (0 is right, 1 is left) for each choice
         if(Mouse.isClicked()) {
-            if(Mouse.isCollided(0,0,GamePanel.WIDTH /2,(GamePanel.HEIGHT - 200)/2 )) {
+            choice = -1;
+            if(Mouse.isCollided(0,325,280,50 )) {
                 choice = LEFT;
-            } else {
+            } else if(Mouse.isCollided(325,325 ,280 ,50 )){
                 choice = RIGHT;
             }
-            int effect = decision.effects[choice];
-
-            if(effect == DIALOGUE) {
-                sm.setState(StateManager.DIALOGUE,decision.dialogue[choice]);
-            } else if(effect == PUZZLE) {
-                sm.setState(StateManager.PUZZLE, decision.puzzle.id);
-            } else if(effect == GRADE) {
-                sm.setState(StateManager.DIALOGUE, decision.dialogue[choice]);
+            if(choice != -1) {
+                int effect = decision.effects[choice];
+                if (effect == DIALOGUE) {
+                    sm.setState(StateManager.DIALOGUE, decision.dialogue[choice]);
+                } else if (effect == PUZZLE) {
+                    sm.setState(StateManager.PUZZLE, decision.puzzle.id);
+                } else if (effect == GRADE) {
+                    sm.setState(StateManager.DIALOGUE, decision.dialogue[choice]);
+                }
             }
         }
 

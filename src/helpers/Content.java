@@ -102,12 +102,8 @@ public class Content {
                 speakers.add(new Speaker(text,spImg , name));
             }
             Speaker[] sp = speakers.toArray(new Speaker[speakers.size()]);
-            if(decisions.containsKey(decision)) {
-                dialogues.put(id, new Dialogue(sp, id, img, decisions.get(decision)));
-            }
-            else {
-                dialogues.put(id, new Dialogue(sp, id, img));
-            }
+            dialogues.put(id, new Dialogue(sp, id, img, decisions.get(decision)));
+
 
         }
     }

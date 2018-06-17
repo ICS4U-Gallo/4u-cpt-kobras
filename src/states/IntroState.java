@@ -42,8 +42,8 @@ public class IntroState extends State {
 
     @Override
     public void handleInput() {
-        if(Mouse.isClicked() && Mouse.isCollided(startBtn))
+        if(Mouse.isClicked() && Mouse.isCollided(startBtn)) {
             sm.setState(sm.LOCATION, 0);
-
+        }
     }
 }

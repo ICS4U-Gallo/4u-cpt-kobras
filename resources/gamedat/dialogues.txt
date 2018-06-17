@@ -3,3 +3,8 @@ resources/gamedat/dialogue/d1.txt
 resources/gamedat/dialogue/d2.txt
 resources/gamedat/dialogue/d3.txt
 resources/gamedat/dialogue/d4.txt
+resources/gamedat/dialogue/d5.txt
+resources/gamedat/dialogue/d6.txt
+resources/gamedat/dialogue/d7.txt
+resources/gamedat/dialogue/d8.txt
+resources/gamedat/dialogue/d9.txt

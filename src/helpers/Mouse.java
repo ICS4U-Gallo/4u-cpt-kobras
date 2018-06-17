@@ -9,7 +9,7 @@ import models.ImgObj;
 public class Mouse  {
     private static int x;
     private static int y;
-    private static boolean clickState;
+    public static boolean clickState;
     private static boolean prevClickState;
     private static boolean isDragged;
 

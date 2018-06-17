@@ -1,5 +1,6 @@
 package game;
 
+import helpers.Mouse;
 import states.*;
 
 import java.awt.*;
@@ -39,7 +40,7 @@ public class StateManager {
         prevState = currState;
         destroy(prevState);
         currState = state;
-
+        Mouse.clickState = false;
         if(state == INTRO) {
             states[state] = new IntroState(this);
             states[state].init();

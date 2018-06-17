@@ -74,14 +74,15 @@ public class LocationState extends State {
     @Override
     public void handleInput() {
         //if mouse collides with entity spot start dialogue
-        if(questing) {
-            if (Mouse.isCollided(Storyline.quests.get(Storyline.currQuest).dialogue.obj)) {
-                sm.setState(DIALOGUE, Storyline.quests.get(Storyline.currQuest).dialogue.getID());
+        if(Mouse.isClicked()) {
+            if (questing) {
+                if (Mouse.isCollided(Storyline.quests.get(Storyline.currQuest).dialogue.obj)) {
+                    sm.setState(DIALOGUE, Storyline.quests.get(Storyline.currQuest).dialogue.getID());
+                }
+            } else if (Mouse.isCollided(location.getDialogue().getObj())) {
+                sm.setState(DIALOGUE, location.getDialogue().getID());
             }
-        }else if(Mouse.isCollided(location.getDialogue().getObj())) {
-            sm.setState(DIALOGUE, location.getDialogue().getID());
         }
-
         // if mouse clicked arrow button
         if(Mouse.isClicked()) {
             for (int i = 0; i < 4; i++) {

@@ -7,12 +7,13 @@ import java.awt.Graphics2D;
 
 public abstract class Puzzle {
     public int id;
-    protected boolean isCompleted;
+    public boolean isCompleted;
     private int dialogue;
 
     public Puzzle(int id, int dialogue) {
         this.id = id;
         this.dialogue = dialogue;
+        isCompleted = false;
     }
 
     public Dialogue getDialogue() {return Content.dialogues.get(dialogue);}

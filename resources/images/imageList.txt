@@ -37,3 +37,4 @@
 501 300 200 200 300 /images/peopleImg/pavalanni.png
 502 300 200 200 400 /images/peopleImg/nach.png
 503 300 200 200 300 /images/peopleImg/laggo.png
+504 300 200 200 500 /images/peopleImg/secretary.png

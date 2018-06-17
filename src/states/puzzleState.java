@@ -36,6 +36,7 @@ public class puzzleState extends State{
             sm.setState(StateManager.LOCATION,0 );
         }
         if(puzz.passed()) {
+            puzz.isCompleted = true;
             sm.setState(StateManager.DIALOGUE,puzz.getDialogue().getID() );
         }
     }
