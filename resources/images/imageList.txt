@@ -33,8 +33,9 @@
 21 250 450 100 100 /images/chbutton1.png
 22 400 450 100 100 /images/chbutton1.png
 -5 20 680 100 100 /images/exit.png
+<<<<<<< HEAD
 500 300 200 200 500 /images/peopleImg/student.png
 501 300 200 200 300 /images/peopleImg/pavalanni.png
 502 300 200 200 400 /images/peopleImg/nach.png
 503 300 200 200 300 /images/peopleImg/laggo.png
-504 300 200 200 500 /images/peopleImg/secretary.png
+504 300 200 200 500 /images/peopleImg/secretary.png504 300 200 200 500 /images/peopleImg/secretary.png
