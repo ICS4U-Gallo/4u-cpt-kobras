@@ -48,7 +48,7 @@ public class PianoPuzzle extends Puzzle {
         Drawer.draw(g, p6);
         if (showSeq) {
             g.setColor(Color.WHITE);
-            g.fillRect(250,400 , 200,50 );
+            g.fillRect(245,395 , 300,40 );
             g.setColor(Color.BLACK);
             g.drawString("Play this sequence: 2, 1, 5, 5, 3, 6", 250, 400);
         }
@@ -112,7 +112,7 @@ public class PianoPuzzle extends Puzzle {
                     index = -1;
                     showSeq = true;
                     showIncorrect = true;
-                    break;
+                    return;
                 }
             }
             showIncorrect = false;

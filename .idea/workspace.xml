@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a584b8b6-5c0f-4221-9435-fc6d9866463f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/gamedat/dialogue/d11.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/gamedat/dialogue/d12.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/gamedat/dialogue/d13.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/gamedat/dialogue/d14.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/gamedat/decisions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/gamedat/decisions.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/gamedat/dialogue/d-1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/gamedat/dialogue/d-1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/gamedat/dialogue/d10.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/gamedat/dialogue/d10.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/gamedat/dialogue/d9.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/gamedat/dialogue/d9.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/gamedat/dialogues.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/gamedat/dialogues.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/gamedat/puzzles.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/gamedat/puzzles.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/gamedat/quests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/gamedat/quests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/imageList.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/imageList.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/puzzleModels/PianoPuzzle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/puzzleModels/PianoPuzzle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/states/DecisionState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/states/DecisionState.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -76,12 +63,14 @@
       <file leaf-file-name="PianoPuzzle.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/models/puzzleModels/PianoPuzzle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1848">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="124">
+              <caret line="50" column="38" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4168#4169#0" expanded="true" />
-                <element signature="e#4195#4196#0" expanded="true" />
+                <element signature="e#1819#1820#0" expanded="true" />
+                <element signature="e#1851#1852#0" expanded="true" />
+                <element signature="e#4043#4044#0" expanded="true" />
+                <element signature="e#4077#4078#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -409,7 +398,21 @@
       <option name="project" value="LOCAL" />
       <updated>1529269257405</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="looking even better">
+      <created>1529272701489</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1529272701489</updated>
+    </task>
+    <task id="LOCAL-00005" summary="update PianoPuzzle">
+      <created>1529273420124</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1529273420124</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -455,7 +458,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="looking better" />
     <MESSAGE value="looking even better" />
-    <option name="LAST_COMMIT_MESSAGE" value="looking even better" />
+    <MESSAGE value="update PianoPuzzle" />
+    <option name="LAST_COMMIT_MESSAGE" value="update PianoPuzzle" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -813,13 +817,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/images/imageList.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/gamedat/dialogue/d14.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
@@ -834,14 +831,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/images/imageList.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/models/puzzleModels/PianoPuzzle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1848">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="124">
+          <caret line="50" column="38" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4168#4169#0" expanded="true" />
-            <element signature="e#4195#4196#0" expanded="true" />
+            <element signature="e#1819#1820#0" expanded="true" />
+            <element signature="e#1851#1852#0" expanded="true" />
+            <element signature="e#4043#4044#0" expanded="true" />
+            <element signature="e#4077#4078#0" expanded="true" />
           </folding>
         </state>
       </provider>
