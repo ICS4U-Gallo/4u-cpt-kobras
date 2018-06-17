@@ -1,6 +1,5 @@
 package states;
 
-import game.GamePanel;
 import game.StateManager;
 import helpers.Content;
 import helpers.Mouse;

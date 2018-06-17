@@ -1,57 +1,15 @@
-<<<<<<< HEAD
-package models.puzzleModels;
-
-import java.awt.*;
-
-public class PianoPuzzle extends Puzzle {
-    public PianoPuzzle(int id, int dialogue) {
-        super(id, dialogue);
-    }
-
-    @Override
-    public void init() {
-        isCompleted= false;
-    }
-
-    @Override
-    public void draw(Graphics2D g) {
-
-    }
-
-    @Override
-    public boolean passed() {
-        return false;
-    }
-
-    @Override
-    public boolean failed() {
-        return false;
-    }
-
-    @Override
-    public boolean quit() {
-        return false;
-    }
-
-    @Override
-    public void handleInput() {
-
-    }
-}
-=======
 package models.puzzleModels;
 
 import helpers.Content;
 import helpers.Drawer;
 import helpers.Mouse;
-import models.Dialogue;
 import models.ImgObj;
+import states.LocationState;
 
 import java.awt.*;
-import java.io.IOException;
 
 public class PianoPuzzle extends Puzzle {
-
+    int index = 0;
     ImgObj p1 = Content.images.get(31);
     ImgObj p2 = Content.images.get(32);
     ImgObj p3 = Content.images.get(33);
@@ -67,8 +25,8 @@ public class PianoPuzzle extends Puzzle {
     boolean showIncorrect = false;
     int timesClicked = 0;
 
-    public PianoPuzzle(Dialogue d) throws IOException {
-
+    public PianoPuzzle(int id, int dialogue) {
+        super(id, dialogue);
     }
 
     @Override
@@ -80,6 +38,7 @@ public class PianoPuzzle extends Puzzle {
 
     @Override
     public void draw(Graphics2D g) {
+        Drawer.draw(g,LocationState.location.getBackground());
         g.setColor(Color.BLACK);
         Drawer.draw(g, p1);
         Drawer.draw(g, p2);
@@ -93,7 +52,7 @@ public class PianoPuzzle extends Puzzle {
         else {
             // cover sequence
             g.setColor(Color.WHITE);
-            g.drawRect(245, 395, 300, 40);
+            g.fillRect(245, 395, 300, 40);
             g.setColor(Color.BLACK);
         }
 
@@ -103,7 +62,7 @@ public class PianoPuzzle extends Puzzle {
         else {
             // cover incorrect warning
             g.setColor(Color.WHITE);
-            g.drawRect(295, 445, 200, 40);
+            g.fillRect(295, 445, 200, 40);
             g.setColor(Color.BLACK);
         }
     }
@@ -138,54 +97,50 @@ public class PianoPuzzle extends Puzzle {
     // this updates frequently
     @Override
     public void handleInput() {
-        while (!passed()) {
-            for (int i = 0; i < played.length; i++) {
-                if (Mouse.isClicked()) {
-                    if (Mouse.isCollided(p1)) {
-                        played[i] = 1;
-                        timesClicked++;
-                        showSeq = false;
-                        showIncorrect = false;
-                    } else if (Mouse.isCollided(p2)) {
-                        played[i] = 2;
-                        timesClicked++;
-                        showSeq = false;
-                        showIncorrect = false;
-                    } else if (Mouse.isCollided(p3)) {
-                        played[i] = 3;
-                        timesClicked++;
-                        showSeq = false;
-                        showIncorrect = false;
-                    } else if (Mouse.isCollided(p4)) {
-                        played[i] = 4;
-                        timesClicked++;
-                        showSeq = false;
-                        showIncorrect = false;
-                    } else if (Mouse.isCollided(p5)) {
-                        played[i] = 5;
-                        timesClicked++;
-                        showSeq = false;
-                        showIncorrect = false;
-                    } else if (Mouse.isCollided(p6)) {
-                        played[i] = 6;
-                        timesClicked++;
-                        showSeq = false;
-                        showIncorrect = false;
-                    } else {
-                        played[i] = 0;
-                        timesClicked++;
-                        showSeq = false;
-                        showIncorrect = false;
-                    }
+        if (Mouse.isClicked()) {
+                if (Mouse.isCollided(p1)) {
+                    played[index] = 1;
+                    timesClicked++;
+                    showSeq = false;
+                    showIncorrect = false;
+                } else if (Mouse.isCollided(p2)) {
+                    played[index] = 2;
+                    timesClicked++;
+                    showSeq = false;
+                    showIncorrect = false;
+                } else if (Mouse.isCollided(p3)) {
+                    played[index] = 3;
+                    timesClicked++;
+                    showSeq = false;
+                    showIncorrect = false;
+                } else if (Mouse.isCollided(p4)) {
+                    played[index] = 4;
+                    timesClicked++;
+                    showSeq = false;
+                    showIncorrect = false;
+                } else if (Mouse.isCollided(p5)) {
+                    played[index] = 5;
+                    timesClicked++;
+                    showSeq = false;
+                    showIncorrect = false;
+                } else if (Mouse.isCollided(p6)) {
+                    played[index] = 6;
+                    timesClicked++;
+                    showSeq = false;
+                    showIncorrect = false;
+                } else {
+                    played[index] = 0;
+                    timesClicked++;
+                    showSeq = false;
+                    showIncorrect = false;
                 }
-            }
+                for(int i = 0; i < )
         }
     }
 
     @Override
     public boolean isCompleted() {
-        return passed();
+        return isCompleted;
     }
 
 }
->>>>>>> pr/6

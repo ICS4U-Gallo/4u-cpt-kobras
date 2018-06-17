@@ -8,3 +8,8 @@ resources/gamedat/dialogue/d6.txt
 resources/gamedat/dialogue/d7.txt
 resources/gamedat/dialogue/d8.txt
 resources/gamedat/dialogue/d9.txt
+resources/gamedat/dialogue/d10.txt
+resources/gamedat/dialogue/d11.txt
+resources/gamedat/dialogue/d12.txt
+resources/gamedat/dialogue/d13.txt
+resources/gamedat/dialogue/d14.txt

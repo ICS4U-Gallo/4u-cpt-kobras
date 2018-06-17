@@ -18,3 +18,15 @@ Wrong person. bye
 Read the note
 Pretend you didnt see it
 9 10 1 2 2
+5
+Read the note
+Pretend you didnt see it
+9 11 1 2 2
+6
+Play the piano
+Play the drums
+12 13 1 2 3
+7
+Ask how his day was
+Ask what the note means
+14 15 2 1 4
