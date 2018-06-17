@@ -30,8 +30,9 @@ public class Dialogue {
     }
 
     public boolean hasDecision() {
-        if(decision.id == -1)
+        if(decision.id == -1) {
             return false;
+        }
         return true;
     }
 

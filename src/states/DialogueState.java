@@ -51,7 +51,6 @@ public class DialogueState extends State {
             if(index >= speakers.length) {
                 index--;
                 if(dialogue.hasDecision()) {
-
                     sm.setState(StateManager.DECISION, dialogue.getDecision().id );
                 } else {
                     sm.setState(StateManager.LOCATION,-1);

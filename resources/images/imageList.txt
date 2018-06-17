@@ -6,6 +6,7 @@
 -1 0 0 0 0 /images/empty.png
 100 0 0 600 600 /images/empty.png
 99 0 0 600 600 /images/intro.jpg
+98 0 0 600 600 /images/ending.jpg
 0 0 0 600 600 /images/locationImg/foyer.jpg
 1 0 0 600 600 /images/locationImg/chapel.jpg
 2 0 0 600 600 /images/locationImg/office.jpg

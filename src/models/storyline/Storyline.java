@@ -37,7 +37,6 @@ public class Storyline {
         currQuest = 0;
     }
     public static void storyFinished() {
-        // output Thanks for playing JDialogue
         TextOutput.s = "Thanks for playing!!!!!!!";
         // set quests currQuests to 0
         startQuest();
