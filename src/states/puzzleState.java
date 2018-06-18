@@ -8,11 +8,9 @@ import models.puzzleModels.Puzzle;
 import java.awt.*;
 
 public class puzzleState extends State{
-    private int id;
     private Puzzle puzz;
     public puzzleState(StateManager sm, int id) {
         super(sm);
-        this.id = id;
         puzz = Content.puzzles.get(id);
     }
 
@@ -33,10 +31,11 @@ public class puzzleState extends State{
 
         puzz.handleInput();
         if(puzz.quit()){
-            sm.setState(StateManager.DIALOGUE,puzz.dialogue.getID() );
+            sm.setState(StateManager.LOCATION,0 );
         }
         if(puzz.passed()) {
-            sm.setState(StateManager.LOCATION,0 );
+            puzz.isCompleted = true;
+            sm.setState(StateManager.DIALOGUE,puzz.getDialogue().getID() );
         }
     }
 

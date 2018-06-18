@@ -1,0 +1,18 @@
+4
+-1
+-1
+Mr.Laggo
+Ah Porsche! Just the person i was waiting to see. You're late for class.
+503
+Mr.Laggo
+Your punishment is 300 lines of code describing why you should never be late to class
+503
+PA
+Hi sir, may I have Porsche come to the main office? This is for Mr. Nahc.
+-1
+Mr. Laggo
+Ah. Mr. Nahc, the bane of my existence. Go ahead Porsche.
+503
+Porsche
+(This is like, the twelfth time he's called me this week? Better check out what he needs this time.)
+-1

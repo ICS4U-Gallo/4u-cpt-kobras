@@ -1,7 +1,7 @@
 package helpers;
 
 import models.*;
-import models.puzzleModels.Puzzle;
+import models.puzzleModels.*;
 import models.storyline.Quest;
 import models.storyline.Storyline;
 
@@ -34,6 +34,7 @@ public class Content {
         initLocations();
         initQuests();
         setDecisions();
+
     }
 
     private static void setDecisions() {
@@ -53,7 +54,24 @@ public class Content {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-
+        while(sc.hasNextLine()) {
+            Scanner sc2 = new Scanner(sc.nextLine());
+            int id = sc2.nextInt();
+            int puzzType = sc2.nextInt();
+            int dialogue = sc2.nextInt();
+            switch (puzzType) {
+                case -1:  puzzles.put(id,new WinPuzzle(id,dialogue));
+                    break;
+                case 0: puzzles.put(id,new PianoPuzzle(id,dialogue));
+                    break;
+                case 1: puzzles.put(id,new WirePuzzle(id,dialogue));
+                    break;
+                case 2: puzzles.put(id,new StoryPuzzle(id,dialogue));
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 
 
@@ -74,13 +92,8 @@ public class Content {
             }
             int id = Integer.parseInt(sc2.nextLine());
             ImgObj img = Content.images.get(Integer.parseInt(sc2.nextLine()));
-            int decision = -1;
-            if(sc2.hasNext(";;")) {
-                String s2 = sc2.nextLine();
-                    decision = Integer.parseInt(s2.substring(0,s2.length() -2));
-            } else {
-                sc2.nextLine();
-            }
+            int decision = Integer.parseInt(sc2.nextLine());
+
             List<Speaker> speakers = new ArrayList<>();
             while(sc2.hasNextLine()) {
                 String name = sc2.nextLine();
@@ -89,12 +102,8 @@ public class Content {
                 speakers.add(new Speaker(text,spImg , name));
             }
             Speaker[] sp = speakers.toArray(new Speaker[speakers.size()]);
-            if(decisions.containsKey(decision)) {
-                dialogues.put(id, new Dialogue(sp, id, img, decisions.get(decision)));
-            }
-            else {
-                dialogues.put(id, new Dialogue(sp, id, img));
-            }
+            dialogues.put(id, new Dialogue(sp, id, img, decisions.get(decision)));
+
 
         }
     }

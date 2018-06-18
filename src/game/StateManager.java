@@ -1,5 +1,6 @@
 package game;
 
+import helpers.Mouse;
 import states.*;
 
 import java.awt.*;
@@ -18,7 +19,8 @@ public class StateManager {
     public static final int DIALOGUE = 3;
     public static final int LOCATION = 4;
     public static final int DECISION = 5;
-    public static final int NUM_STATES = 6;
+    public static final int ENDING = 6;
+    public static final int NUM_STATES = 7;
 
     /**
      * when game is started
@@ -38,7 +40,7 @@ public class StateManager {
         prevState = currState;
         destroy(prevState);
         currState = state;
-
+        Mouse.clickState = false;
         if(state == INTRO) {
             states[state] = new IntroState(this);
             states[state].init();
@@ -57,6 +59,9 @@ public class StateManager {
         }else if(state == DECISION) {
             states[state] = new DecisionState(this, id);
             states[state].init();
+        }else if(state == ENDING) {
+            states[state] = new EndState(this,id );
+            states[state].init();
         }
     }
 
@@ -74,7 +79,6 @@ public class StateManager {
      * @param g
      */
     public void draw(Graphics2D g) {
-
         if(states[currState] != null) {
             states[currState].draw(g);
         }

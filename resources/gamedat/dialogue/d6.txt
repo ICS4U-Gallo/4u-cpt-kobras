@@ -1,0 +1,18 @@
+6
+-1
+-1
+Secretary
+Porsche you've been here for so long, of course I know who you are. Mr.Nach always tells me what a wonderful student you are.
+504
+Secretary
+Did he call you into the office again?
+504
+Porsche
+Yeah. He called for me to come here. Why isn't he here??
+-1
+Secretary
+He might be in the chapel check there
+504
+Porsche
+(sigh) Another wild goose chase...
+-1

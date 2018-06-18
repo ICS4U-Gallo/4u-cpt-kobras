@@ -24,24 +24,5 @@ public class Player {
         return grade;
     }
 
-    public static void setGrade(int in) {
-        grade += in;
-        if(grade >= 13) {
-            grade = 9;
-        }
-    }
-
-    public static Location getLocation() {
-        return Content.locations.get(location);
-    }
-
-    public static void setLocation(int move) {
-        location = move;
-    }
-
-    public static void increaseCredit() {
-        credits++;
-    }
-
 
 }

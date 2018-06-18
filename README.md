@@ -9,6 +9,13 @@ https://drive.google.com/file/d/1XImkd3lKZEuy_Xqwi0SWBkSPfnRyidDI/view?usp=shari
 
 
 THINGS TO KNOW
+-1 is winpuzzle
+0 is piano puzzle
+1 is wirepuzzle
+2 is storypuzzle
+3 is idkpuzzle
+puzzles.txt
+id puzzleType dialoguethatcomesafter
 
 quests.txt
 whichOrder roomid DialogueID
@@ -22,10 +29,10 @@ dialogueIDfor1 dialogueIDfor2 effectfor1 effectfor2 puzzle id
 
 
 other note speakers are made of name text and imgObj and can be repeated
-Dialogue text format **decision spot can be left blank, no ;;
+Dialogue text format
 id
 imgObj
-decision;;
+decision
 name
 text here
 imgObj of speaker

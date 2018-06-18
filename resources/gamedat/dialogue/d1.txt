@@ -1,0 +1,15 @@
+1
+100
+1
+PA:
+Welcome to St. Bob! It is always an honour to have so many new students blah blah blah unifo... blah blah blah
+-1
+Porsche(YOU)
+Wow. This school sure looks fancy. I hope I make a lot of friends.
+-1
+Porsche
+Hm. It's lunch time already, and the caf is really loud. I'm gonna eat here--
+-1
+Mr. Nahc
+HEY A LONER! Come to the chaplaincy office! We have frozen pizza.
+502

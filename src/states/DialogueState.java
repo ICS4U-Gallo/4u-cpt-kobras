@@ -6,6 +6,7 @@ import helpers.Drawer;
 import helpers.Mouse;
 import helpers.TextOutput;
 import models.Dialogue;
+import models.Player;
 import models.Speaker;
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -18,6 +19,7 @@ public class DialogueState extends State {
     public DialogueState(StateManager sm, int id) {
         super(sm);
         dialogue = Content.dialogues.get(id);
+        dialogue.spoken = true;
         speakers = dialogue.getSpeakers();
         index = 0;
     }
@@ -29,6 +31,7 @@ public class DialogueState extends State {
     @Override
     public void draw(Graphics2D g) {
         // draw background
+        Drawer.draw(g,LocationState.location.getBackground());
         // draw the character
         Drawer.draw(g,speakers[index].image);
     }
@@ -37,6 +40,7 @@ public class DialogueState extends State {
     public void update() {
         handleInput();
         TextOutput.s = speakers[index].name + ":\n"+ speakers[index].text;
+        TextOutput.formatString();
 
     }
 
@@ -46,6 +50,7 @@ public class DialogueState extends State {
         if(Mouse.isClicked()) {
             index++;
             if(index >= speakers.length) {
+                index--;
                 if(dialogue.hasDecision()) {
                     sm.setState(StateManager.DECISION, dialogue.getDecision().id );
                 } else {

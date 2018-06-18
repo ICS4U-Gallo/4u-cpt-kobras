@@ -14,6 +14,7 @@ import java.awt.*;
  */
 public class IntroState extends State {
     private ImgObj startBtn = Content.images.get(105);
+    ImgObj bg = Content.images.get(99);
 
     public IntroState(StateManager sm) {
         super(sm);
@@ -29,7 +30,7 @@ public class IntroState extends State {
     @Override
     public void draw(Graphics2D g) {
 
-        Drawer.draw(g,Content.images.get(-1));
+        Drawer.draw(g,bg);
         Drawer.draw(g,startBtn);
 
     }
@@ -41,10 +42,8 @@ public class IntroState extends State {
 
     @Override
     public void handleInput() {
-        if(Mouse.isClicked() && Mouse.isCollided(startBtn))
+        if(Mouse.isClicked() && Mouse.isCollided(startBtn)) {
             sm.setState(sm.LOCATION, 0);
-
-        if(Mouse.isClicked())
-            TextOutput.s = "qwertyuiop";
+        }
     }
 }

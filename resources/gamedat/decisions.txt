@@ -1,4 +1,44 @@
 -1
 choice 1
 choice 2
-2 2 -1 -1 -1
+2 2 1 1 -1
+1
+follow mr.nach
+resistance is futile
+2 2 1 1 -1
+2
+Go to class
+Too bad you're already here
+3 3 1 1 0
+3
+Hi, im porshe, do you know where Mr.Nach is?
+Wrong person. bye
+6 7 1 2 1
+4
+Read the note
+Pretend you didnt see it
+9 10 1 2 2
+5
+Read the note
+Pretend you didnt see it
+9 11 1 2 2
+6
+Play the piano
+Play the drums
+12 13 1 2 3
+7
+Ask how his day was
+Ask what the note means
+15 16 2 1 4
+8
+I'm here to fix the speakers
+I'm carrying out mission by Mr.Nach
+18 18 1 1 5
+9
+See it
+Don't see it
+20 21 1 2 6
+10
+Humor him
+There's no way out
+20 20 1 1 6

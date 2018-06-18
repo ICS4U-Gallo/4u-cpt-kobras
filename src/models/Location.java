@@ -1,7 +1,5 @@
 package models;
 
-import helpers.Content;
-
 public class Location {
     public int id;
     private int[] roomLocations; // up right down left
@@ -28,20 +26,10 @@ public class Location {
     }
 
     public Dialogue getDialogue() {
-        int a = 0;
-        if(isPuzzleDone()) {
-            a++;
+        if(!dialogues[Player.getGrade() - 9][0].spoken) {
+            return dialogues[Player.getGrade() - 9][0];
+        } else {
+            return dialogues[Player.getGrade() - 9][1];
         }
-        return dialogues[Player.getGrade() - 9][a];
-    }
-    public boolean isPuzzleDone() {
-        if(hasPuzzle() && Content.puzzles.get(id *100 + Player.getGrade() - 9).isCompleted()) {
-            return true;
-        }
-        return false;
-    }
-
-    public boolean hasPuzzle() {
-        return Content.puzzles.containsKey(Integer.parseInt(id + "" + (Player.getGrade() - 9)));
     }
 }
