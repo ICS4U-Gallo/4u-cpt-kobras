@@ -88,10 +88,6 @@ public class PianoPuzzle extends Puzzle {
         return allCorrect;
     }
 
-    @Override
-    public boolean failed() {
-        return false;
-    }
 
     @Override
     public boolean quit() {

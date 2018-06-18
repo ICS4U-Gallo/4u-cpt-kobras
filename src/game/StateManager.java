@@ -91,8 +91,6 @@ public class StateManager {
      * it is called 30X per second
      */
     public void update() {
-        if(Mouse.isClicked())
-        System.out.println(Mouse.isClicked() + "\n false");
         if(states[currState] != null) {
             states[currState].update();
         }

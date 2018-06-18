@@ -81,11 +81,7 @@ public class WirePuzzle extends Puzzle {
         return true;
     }
 
-    // dw about this ;)
-    @Override
-    public boolean failed() {
-        return false;
-    }
+
 
     // oh right
     // theres also this

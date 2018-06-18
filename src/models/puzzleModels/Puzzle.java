@@ -25,8 +25,6 @@ public abstract class Puzzle {
 
     public abstract boolean passed();
 
-    public abstract boolean failed();
-
     public abstract boolean quit();
 
     public abstract void handleInput();

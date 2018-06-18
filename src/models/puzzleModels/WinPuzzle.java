@@ -22,11 +22,6 @@ public class WinPuzzle extends Puzzle {
     }
 
     @Override
-    public boolean failed() {
-        return false;
-    }
-
-    @Override
     public boolean quit() {
         return false;
     }
