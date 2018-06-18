@@ -472,7 +472,14 @@
       <option name="project" value="LOCAL" />
       <updated>1529286899444</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="little fixes">
+      <created>1529287946024</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1529287946024</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -556,7 +563,8 @@
     <MESSAGE value="fixed Many bugs" />
     <MESSAGE value="ITS DONE BWAHAHAHA" />
     <MESSAGE value="removing fat" />
-    <option name="LAST_COMMIT_MESSAGE" value="removing fat" />
+    <MESSAGE value="little fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="little fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

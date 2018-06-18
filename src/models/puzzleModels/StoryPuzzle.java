@@ -1,16 +1,11 @@
 package models.puzzleModels;
 
-import game.GamePanel;
 import helpers.Content;
 import helpers.Drawer;
 import helpers.Mouse;
 import helpers.TextOutput;
-import models.Dialogue;
 import models.ImgObj;
-
-import javax.imageio.ImageIO;
 import java.awt.*;
-import java.io.IOException;
 import java.util.Arrays;
 
 public class StoryPuzzle extends Puzzle {
