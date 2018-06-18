@@ -8,6 +8,7 @@ import models.Dialogue;
 import models.ImgObj;
 
 import java.awt.*;
+import java.awt.image.BufferedImage;
 import java.io.IOException;
 
 /*
@@ -34,7 +35,6 @@ public class WirePuzzle extends Puzzle {
         super(id, dialogue);
     }
 
-
     @Override
     public void init() {
         isCompleted = false;
@@ -45,9 +45,10 @@ public class WirePuzzle extends Puzzle {
 
     @Override
     public void draw(Graphics2D g) {
+        g.setColor(Color.WHITE);
         g.fillRect(0,0 ,600 ,600 );
         //g.setColor(Color.BLACK);
-        TextOutput.s ="Find a path for the wires to connect from start to end";
+        TextOutput.s ="Find a path for the wires to connect from\nstart to end";
         Drawer.draw(g, pstart);
         Drawer.draw(g, pend);
         for(int i = 0; i < pipes.length; i++) {
@@ -60,6 +61,8 @@ public class WirePuzzle extends Puzzle {
         for (int i = 0; i < rot.length; i++){
             if ((rot[i] % 4) != 0) {
                 correct[i] = false;
+            } else {
+                correct[i] = true;
             }
         }
 
@@ -104,8 +107,9 @@ public class WirePuzzle extends Puzzle {
             for(int i = 0; i < pipes.length; i++) {
                 // this part is where you set whatever you need to set
                 if(Mouse.isCollided(pipes[i])) {
-                    Graphics2D g2 =(Graphics2D) pipes[i].img.getGraphics();
-                    g2.rotate(Math.toRadians(90));
+                    pipes[i].img =rotateCw(pipes[i].img);
+//                    Graphics2D g2 = pipes[i].img.createGraphics();
+//                    g2.rotate(Math.toRadians(90));
                     rot[i]++;
                     // these must always be correct (the unused pipes)
                     rot[6] = 0;
@@ -114,7 +118,18 @@ public class WirePuzzle extends Puzzle {
             }
         }
     }
+    public static BufferedImage rotateCw( BufferedImage img )
+    {
+        int         width  = img.getWidth();
+        int         height = img.getHeight();
+        BufferedImage   newImage = new BufferedImage( height, width, img.getType() );
 
+        for( int i=0 ; i < width ; i++ )
+            for( int j=0 ; j < height ; j++ )
+                newImage.setRGB( height-1-j, i, img.getRGB(i,j) );
+
+        return newImage;
+    }
     @Override
     public boolean isCompleted() {
         return passed();

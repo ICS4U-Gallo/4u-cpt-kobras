@@ -44,3 +44,9 @@
 34 300 0 100 250 /images/piano4.png
 35 400 0 100 250 /images/piano5.png
 36 500 0 100 250 /images/piano6.png
+41 0 0 100 250 /images/piano1gr.png
+42 100 0 100 250 /images/piano2gr.png
+43 200 0 100 250 /images/piano3gr.png
+44 300 0 100 250 /images/piano4gr.png
+45 400 0 100 250 /images/piano5gr.png
+46 500 0 100 250 /images/piano6gr.png

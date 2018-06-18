@@ -19,6 +19,7 @@ public class PianoPuzzle extends Puzzle {
     ImgObj p5 = Content.images.get(35);
     ImgObj p6 = Content.images.get(36);
     // ImgObj exit = Content.images.get(-5);
+    ImgObj[] corrects = {Content.images.get(41), Content.images.get(42),Content.images.get(43),Content.images.get(44),Content.images.get(45),Content.images.get(46)};
 
     int[] sequence = {2, 1, 5, 5, 3, 6};
     int[] played = new int[6];
@@ -47,6 +48,11 @@ public class PianoPuzzle extends Puzzle {
         Drawer.draw(g, p4);
         Drawer.draw(g, p5);
         Drawer.draw(g, p6);
+        try {
+            Drawer.draw(g, corrects[played[index - 1] - 1]);
+        } catch(Exception e) {
+
+        }
         if (showSeq) {
             TextOutput.s = "Play this sequence: 2, 1, 5, 5, 3, 6";
 //            g.setColor(Color.WHITE);
@@ -123,7 +129,7 @@ public class PianoPuzzle extends Puzzle {
                 }
             }
             showIncorrect = false;
-            if(index == 5) {
+            if(index == 6) {
                 allCorrect = true;
             }
         }

@@ -16,3 +16,7 @@ resources/gamedat/dialogue/d14.txt
 resources/gamedat/dialogue/d15.txt
 resources/gamedat/dialogue/d16.txt
 resources/gamedat/dialogue/d17.txt
+resources/gamedat/dialogue/d18.txt
+resources/gamedat/dialogue/d19.txt
+resources/gamedat/dialogue/d20.txt
+resources/gamedat/dialogue/d21.txt
