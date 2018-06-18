@@ -14,7 +14,6 @@ public class StateManager {
     private int currState;
     private int prevState;
     public static final int INTRO = 0;
-    public static final int MENU = 1;
     public static final int PUZZLE = 2;
     public static final int DIALOGUE = 3;
     public static final int LOCATION = 4;
@@ -44,10 +43,7 @@ public class StateManager {
         if(state == INTRO) {
             states[state] = new IntroState(this);
             states[state].init();
-        } else if(state == MENU) {
-            states[state] = new MenuState(this);
-            states[state].init();
-        }else if(state == PUZZLE) {
+        } else if(state == PUZZLE) {
             states[state] = new puzzleState(this, id);
             states[state].init();
         }else if(state == DIALOGUE) {

@@ -23,7 +23,7 @@ public class StoryPuzzle extends Puzzle {
     String[][] arr = {choices0, choices1, choices2, choices3, choices4};
     String[] words = new String[5];
     int index = 0;
-    int storyInt = 0;
+    int storyInt = -1;
     boolean done = false;
     // story
     String story;
