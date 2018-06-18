@@ -29,7 +29,6 @@ public class WirePuzzle extends Puzzle {
 
     int[] rot = {1, 0, 3, 2, 2, 1, 0, 0, 2, 2, 3, 0};
     boolean[] correct = {false, true, false, false, false, false, true, true, false, false, false, true};
-    boolean quit = false;
 
     public WirePuzzle(int id, int dialogue) {
         super(id, dialogue);

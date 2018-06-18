@@ -8,11 +8,9 @@ import models.puzzleModels.Puzzle;
 import java.awt.*;
 
 public class puzzleState extends State{
-    private int id;
     private Puzzle puzz;
     public puzzleState(StateManager sm, int id) {
         super(sm);
-        this.id = id;
         puzz = Content.puzzles.get(id);
     }
 
