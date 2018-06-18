@@ -1,16 +1,11 @@
 package models.puzzleModels;
 
-import game.GamePanel;
 import helpers.Content;
 import helpers.Drawer;
 import helpers.Mouse;
 import helpers.TextOutput;
-import models.Dialogue;
 import models.ImgObj;
-
-import javax.imageio.ImageIO;
 import java.awt.*;
-import java.io.IOException;
 import java.util.Arrays;
 
 public class StoryPuzzle extends Puzzle {
@@ -23,7 +18,7 @@ public class StoryPuzzle extends Puzzle {
     String[][] arr = {choices0, choices1, choices2, choices3, choices4};
     String[] words = new String[5];
     int index = 0;
-    int storyInt = 0;
+    int storyInt = -1;
     boolean done = false;
     // story
     String story;
